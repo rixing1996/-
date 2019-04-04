@@ -1,0 +1,11 @@
+.crxCarousel img{display: block;}
+.crxCarousel{position:relative;overflow:hidden;}
+.crxCarousel ul{position:absolute;overflow:hidden;list-style: none;padding:0;margin:0;}
+.crxCarousel .horizontal li{float:left;}
+.crxCarousel .faded li{position:absolute;left: 0;top: 0;}
+
+.crxCarousel .page{position:absolute;right:0;bottom:0;padding:10px;}
+.crxCarousel .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+.crxCarousel .page span.active{background-color: rgba(255,0,0,.8);}
+.crxCarousel .zuo{width: 30px;height: 30px;position: absolute;left:0;top:35%;line-height: 30px;text-align: center;color:white;font-weight: 900;background: black;}
+.crxCarousel .you{width: 30px;height: 30px;position: absolute;right:0;top:35%;line-height: 30px;text-align: center;color:white;font-weight: 900;background: black;}

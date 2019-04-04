@@ -1,0 +1,96 @@
+/* 登录区的外层 */
+#login{
+    background:rgb(242, 242, 242);
+}
+/* 左边登录注册区 */
+#login .login_l .login_l_p1{
+    font-size: 12px;
+    color:#666;
+    line-height: 30px;
+}
+#login .login_l .login_l_p2{
+    font-size: 12px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+#login .login_l .login_l_p2>a{
+    color:rgb(230, 0, 0);
+    margin:0 10px;
+}
+#login .login_l .login_l_p2>a:hover{
+    text-decoration: underline;
+}
+/* 右边个人区 */
+#login .login_r{
+    line-height: 30px;
+    font-size: 12px;
+}
+#login .login_r>li{
+    float: left;
+    margin-left: 20px;
+    padding:0 10px;
+}
+#login .login_r>li>a{
+    color:#333;
+}
+#login .login_r>li>a:hover{
+    color:rgb(230, 0, 0);
+    text-decoration: underline;
+}
+#login .login_r>li>i{
+    color:rgb(189, 189, 189);
+    font-size: 12px;
+}
+/* 我的账户、手机中图共同处 */
+#login .login_r .login_r_li{
+    position: relative;
+}
+#login .login_r .login_r_li:hover{
+    background: #fff;
+    border:1px solid rgb(218, 218, 218);
+    border-bottom: 0 none;
+    padding:0 9px;
+    line-height: 28px;
+}
+#login .login_r .login_r_li:hover>i:before{
+    color:rgb(233, 31, 31);
+    display: inline-block;
+    transform: rotate(180deg);
+}
+/* 我的账户 */
+#login .login_r .login_r_li3 .login_r_li3_d{
+    width: 160px;
+    background: #fff;
+    position: absolute;
+    border:1px solid rgb(218, 218, 218);
+    left:-1px;
+    top:28px;
+    display: none;
+    box-sizing: border-box;
+    padding:0 8px;
+}
+#login .login_r .login_r_li:hover>div{
+    display: block;
+}
+#login .login_r .login_r_li3 .login_r_li3_d:before{
+    content:"";
+    background: #fff;
+    position:absolute;
+    top:-2px;
+    left:0px;
+    height: 3px;
+    width: 83px;
+}
+#login .login_r .login_r_li3 .login_r_li3_d>div>a{
+    display: block;
+    margin-bottom:4px;
+    color:rgb(102, 102, 102);
+}
+#login .login_r .login_r_li3 .login_r_li3_d>div>a:hover{
+    text-decoration: underline;
+}
+#login .login_r .login_r_li3 .login_r_li3_d .login_r_li3_d1{
+    width: 70px;
+    margin-right: 5px;
+}
+/* 手机中图 */
