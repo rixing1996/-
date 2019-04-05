@@ -57,6 +57,17 @@
     display: inline-block;
     transform: rotate(180deg);
 }
+#login .login_r .login_r_li:hover>div{
+    display: block;
+}
+#login .login_r .login_r_li>div:before{
+    content:"";
+    background: #fff;
+    position:absolute;
+    top:-2px;
+    height: 3px;
+    width: 83px;
+}
 /* 我的账户 */
 #login .login_r .login_r_li3 .login_r_li3_d{
     width: 160px;
@@ -69,17 +80,8 @@
     box-sizing: border-box;
     padding:0 8px;
 }
-#login .login_r .login_r_li:hover>div{
-    display: block;
-}
 #login .login_r .login_r_li3 .login_r_li3_d:before{
-    content:"";
-    background: #fff;
-    position:absolute;
-    top:-2px;
     left:0px;
-    height: 3px;
-    width: 83px;
 }
 #login .login_r .login_r_li3 .login_r_li3_d>div>a{
     display: block;
@@ -94,3 +96,17 @@
     margin-right: 5px;
 }
 /* 手机中图 */
+#login .login_r .login_r_li5 .login_r_li5_d{
+    width: 160px;
+    background: #fff;
+    position: absolute;
+    border:1px solid rgb(218, 218, 218);
+    right:-1px;
+    top:28px;
+    display: none;
+    box-sizing: border-box;
+    padding:0 8px;
+}
+#login .login_r .login_r_li5 .login_r_li5_d:before{
+    right:0px;
+}
