@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../lib/crxcarousel/crxcarousel.css">
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+    <script src="../lib/crxcarousel/crxcarousel.js"></script>
+    <script>
+        jQuery(function($){
+            $(".logo_a3").crxCarousel({img:["../img/05.logo.png","../img/06.logo.png","../img/07.logo.png","../img/08.logo.png"],type:"vertical",width:170,height:50});
+        })
+    </script>
+</head>
+<body>
+    <!-- 登录区的外层 -->
+    <div id="login">
+        <!-- 登录区里层 -->
+        <div class="login con clearfix">
+            <!-- 左边登录注册区 -->
+            <div class="login_l fl">
+                <div class="login_l_p1 fl">欢迎光临中国图书网&emsp;请</div>
+                <div class="login_l_p2 fl">
+                    <a href="#" class="login_l_a1">登录</a>
+                    <img src="../img/login1.jpg" alt="" style="height:15px;" > 
+                    <a href="#" class="login_l_a1">注册</a>
+                </div>
+            </div>
+            <!-- 右边个人区 -->
+            <ul class="login_r fr">
+                <li><a href="#">购物车</a></li>
+                <li><a href="#">我的订单</a></li>
+                <!-- 我的账户 -->
+                <li class="login_r_li login_r_li3">
+                    <a href="#">我的账户</a>
+                    <i class="iconfont icon-xia"></i>
+                    <div class="login_r_li3_d">
+                        <div class="login_r_li3_d1 fl">
+                            <a href="#">我的收藏夹</a>
+                            <a href="#">我的优惠券</a>
+                            <a href="#">收货地址</a>
+                            <a href="#">我的信息</a>
+                        </div>
+                        <div class="login_r_li3_d2 fl">
+                            <a href="#">账户余额</a>
+                            <a href="#">我的积分</a>
+                            <a href="#">我的书评</a>
+                            <a href="#">积分换券</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">帮助中心</a></li>
+                <!-- 手机中图 -->
+                <li class="login_r_li login_r_li5">
+                    <a href="#">手机中图</a>
+                    <i class="iconfont icon-xia"></i>
+                    <div class="login_r_li5_d">
+                        <div class="login_r_li5_d1">
+                            <p class="login_r_li5_p1">扫一扫</p>
+                            <p>关注中图网官方微博</p>
+                        </div>
+                        <div class="login_r_li5_d2">
+                            <p class="login_r_li5_p1">扫一扫</p>
+                            <p>关注中图网微信公众号</p>
+                        </div>
+                        <div class="login_r_li5_d3">
+                            <p class="login_r_li5_p1">扫一扫</p>
+                            <p>关注中图网手机触屏版</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- LOGO区域 -->
+    <div id="logo">
+        <div class="logo con clearfix">
+            <a href="#" class="logo_a1 fl" ><img src="../img/logo.png" alt=""></a>
+            <!-- 中间的搜索区域 -->
+            <div class="logo_d2 fl">
+                <form action="#">
+                    <input type="text" class="logo_i" placeholder="毛泽东" ><input type="submit" value="搜索" class="logo_s" >
+                    <!-- 下滑框 -->
+                    <div class="logo_o">
+                        <span>搜索全部</span><i class="iconfont icon-shang3"></i>
+                        <div class="logo_o1">
+                            <p>搜索全部</p>
+                            <p>书名</p>
+                            <p>作者</p>
+                            <p>出版社</p>
+                            <p>ISBN</p>
+                        </div>
+                    </div>
+                    <!-- 高级搜索 -->
+                    <a href="#" class="logo_a2" >高级搜索</a>
+                    <div class="logo_d3">
+                        <a href="#">马克斯·韦伯艺术随笔</a>
+                        <a href="#">爱伦·坡暗黑故事集-精装</a>
+                        <a href="#">中华的另一种可能:魏晋风流</a>
+                        <a href="#">中国文库</a>
+                    </div>
+                </form>
+            </div>
+            <div class="logo_r fr">
+                <span></span>
+                <a href="#" class="logo_a3" ></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

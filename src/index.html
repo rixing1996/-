@@ -6,6 +6,14 @@
     <link rel="stylesheet" type="text/css" href="./css/base.css">
     <link rel="stylesheet" type="text/css" href="./css/index1.css">
     <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./lib/crxcarousel/crxcarousel.css">
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+    <script src="./lib/crxcarousel/crxcarousel.js"></script>
+    <script>
+        jQuery(function($){
+            $(".logo_a3").crxCarousel({img:["./img/05.logo.png","./img/06.logo.png","./img/07.logo.png","./img/08.logo.png"],type:"vertical",width:170,height:50});
+        })
+    </script>
 </head>
 <body>
     <!-- 外面最大的盒子 -->
@@ -53,17 +61,651 @@
                         <i class="iconfont icon-xia"></i>
                         <div class="login_r_li5_d">
                             <div class="login_r_li5_d1">
-
+                                <p class="login_r_li5_p1">扫一扫</p>
+                                <p>关注中图网官方微博</p>
                             </div>
                             <div class="login_r_li5_d2">
-
+                                <p class="login_r_li5_p1">扫一扫</p>
+                                <p>关注中图网微信公众号</p>
                             </div>
                             <div class="login_r_li5_d3">
-
+                                <p class="login_r_li5_p1">扫一扫</p>
+                                <p>关注中图网手机触屏版</p>
                             </div>
                         </div>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <!-- LOGO区域 -->
+        <div id="logo">
+            <div class="logo con clearfix">
+                <a href="#" class="logo_a1 fl" ><img src="./img/logo.png" alt=""></a>
+                <!-- 中间的搜索区域 -->
+                <div class="logo_d2 fl">
+                    <form action="#">
+                        <input type="text" class="logo_i" placeholder="毛泽东" ><input type="submit" value="搜索" class="logo_s" >
+                        <!-- 下滑框 -->
+                        <div class="logo_o">
+                            <span>搜索全部</span><i class="iconfont icon-shang3"></i>
+                            <div class="logo_o1">
+                                <p>搜索全部</p>
+                                <p>书名</p>
+                                <p>作者</p>
+                                <p>出版社</p>
+                                <p>ISBN</p>
+                            </div>
+                        </div>
+                        <!-- 高级搜索 -->
+                        <a href="#" class="logo_a2" >高级搜索</a>
+                        <div class="logo_d3">
+                            <a href="#">马克斯·韦伯艺术随笔</a>
+                            <a href="#">爱伦·坡暗黑故事集-精装</a>
+                            <a href="#">中华的另一种可能:魏晋风流</a>
+                            <a href="#">中国文库</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="logo_r fr">
+                    <span></span>
+                    <a href="#" class="logo_a3" ></a>
+                </div>
+            </div>
+        </div>
+        <!-- 导航区域 -->
+        <div id="nav">
+            <div class="nav con clearfix">
+                <!-- 左边的导航 -->
+                <div class="nav_l fl">
+                    <i class="iconfont icon-menu2"></i>
+                    <span>图书分类</span>
+                    <i class="iconfont icon-xia"></i>
+                    <!-- 导航分类区域 -->
+                    <div class="nav_class">
+                        <!-- 文学类 -->
+                        <div class="nav_wx clearfix">
+                            <p><a href="#">文学</a><i class="iconfont icon-you fr"></i></p>
+                            <a href="#">小说</a>
+                            <a href="#">青春文学</a>
+                            <a href="#">中国散文</a>
+                            <a href="#">外国散文</a>
+                            <a href="#">悬疑推理</a>
+                            <a href="#">文学理论</a>
+                            <a href="#">文集</a>
+                            <a href="#">世界名著</a>
+                            <div class="nav_wxshow">
+                                <div class="nav_wxshow1 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">小说</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">外国小说</a>
+                                        <a href="#">中国当代小说</a>
+                                        <a href="#">中国古典小说</a>
+                                        <a href="#">中国近现代小说</a>
+                                        <a href="#">悬疑推理</a>
+                                        <a href="#">科幻小说</a>
+                                        <a href="#">世界名著</a>
+                                        <a href="#">四大名著</a>
+                                        <a href="#">作品集</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_wxshow2 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">文学</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">外国诗歌</a>
+                                        <a href="#">中国古诗词</a>
+                                        <a href="#">中国现当代诗歌</a>
+                                        <a href="#">外国散文</a>
+                                        <a href="#">中国现当代散文</a>
+                                        <a href="#">中国古代散文</a>
+                                        <a href="#">文学理论</a>
+                                        <a href="#">文集</a>
+                                        <a href="#">戏剧</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_wxshow3 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">青春文学</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">玄幻/科幻</a>
+                                        <a href="#">悬疑/惊悚</a>
+                                        <a href="#">叛逆/成长</a>
+                                        <a href="#">爆笑/无厘头</a>
+                                        <a href="#">校园</a>
+                                        <a href="#">港台青春文学</a>
+                                        <a href="#">外国青春文学</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 社科类 -->
+                        <div class="nav_sk clearfix">
+                            <p><a href="#">社科</a><i class="iconfont icon-you fr"></i></p>
+                            <a href="#">历史</a>
+                            <a href="#">哲学/宗教</a>
+                            <a href="#">社会科学</a>
+                            <a href="#">政治军事</a>
+                            <a href="#">传记</a>
+                            <a href="#">文化</a>
+                            <a href="#">古籍</a>
+                            <a href="#">管理</a>
+                            <a href="#">经济</a>
+                            <a href="#">成功励志</a>
+                            <a href="#">法律</a>
+                            <a href="#">语言文字</a>
+                            <div class="nav_skshow">
+                                <div class="nav_skshow1 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">历史</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">中国史</a>
+                                        <a href="#">世界史</a>
+                                        <a href="#">地方史志</a>
+                                        <a href="#">历史知识读物</a>
+                                        <a href="#">史料典籍</a>
+                                        <a href="#">史学理论</a>
+                                        <a href="#">考古文物</a>
+                                        <a href="#">民族史志</a>
+                                    </div>
+                                </div>
+                                <div class="nav_skshow2 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">政治/哲学</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">政治</a>
+                                        <a href="#">军事</a>
+                                        <a href="#">中国政治</a>
+                                        <a href="#">国际政治</a>
+                                        <a href="#">外交/国际关系</a>
+                                        <a href="#">哲学</a>
+                                        <a href="#">宗教</a>
+                                        <a href="#">美学</a>
+                                        <a href="#">哲学知识读物</a>
+                                        <a href="#">中国古代哲学</a>
+                                    </div>
+                                </div>
+                                <div class="nav_skshow3 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">传记</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">历代帝王</a>
+                                        <a href="#">历史人物</a>
+                                        <a href="#">科学家</a>
+                                        <a href="#">体育明星</a>
+                                        <a href="#">文学家</a>
+                                        <a href="#">学者</a>
+                                        <a href="#">艺术家</a>
+                                        <a href="#">文娱明星</a>
+                                        <a href="#">政治人物</a>
+                                        <a href="#">自传</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_skshow4 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">文化</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">世界文化</a>
+                                        <a href="#">中国文化</a>
+                                        <a href="#">中国民俗</a>
+                                        <a href="#">地域文化</a>
+                                        <a href="#">文化理论</a>
+                                        <a href="#">文化评述</a>
+                                        <a href="#">神秘现象</a>
+                                    </div>
+                                </div>
+                                <div class="nav_skshow5 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">社会科学</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">心理学</a>
+                                        <a href="#">人类学</a>
+                                        <a href="#">教育</a>
+                                        <a href="#">社会学</a>
+                                        <a href="#">新闻传播出版</a>
+                                        <a href="#">语言文字</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_skshow6 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">古籍</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">古籍整理</a>
+                                        <a href="#">经部</a>
+                                        <a href="#">史类</a>
+                                        <a href="#">子部</a>
+                                        <a href="#">集部</a>
+                                    </div>
+                                </div>
+                                <div class="nav_skshow7 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">经济/管理</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">经济理论</a>
+                                        <a href="#">中国经济</a>
+                                        <a href="#">国际经济</a>
+                                        <a href="#">经济通俗读物</a>
+                                        <a href="#">保险</a>
+                                        <a href="#">会计</a>
+                                        <a href="#">金融投资</a>
+                                        <a href="#">市场营销</a>
+                                        <a href="#">管理学</a>
+                                        <a href="#">电子商务</a>
+                                    </div>
+                                </div>
+                                <div class="nav_skshow8 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">成功励志</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">成功激励</a>
+                                        <a href="#">口才演讲</a>
+                                        <a href="#">名人励志</a>
+                                        <a href="#">人际交往</a>
+                                        <a href="#">人生哲学</a>
+                                        <a href="#">心灵修养</a>
+                                        <a href="#">性格习惯</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_skshow9 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">法律</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">法的理论</a>
+                                        <a href="#">法律法规</a>
+                                        <a href="#">国际法</a>
+                                        <a href="#">经济法</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 少儿类 -->
+                        <div class="nav_se clearfix">
+                            <p><a href="#">少儿</a><i class="iconfont icon-you fr"></i></p>
+                            <a href="#">中国儿童文学</a>
+                            <a href="#">外国儿童文学</a>
+                            <a href="#">科普读物</a>
+                            <a href="#">绘本</a>
+                            <a href="#">动漫/卡通</a>
+                            <a href="#">幼儿启蒙</a>
+                            <div class="nav_seshow">
+                                <div class="nav_seshow1 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">儿童文学</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">中国儿童文学</a>
+                                        <a href="#">外国儿童文学</a>
+                                        <a href="#">童话</a>
+                                        <a href="#">小说</a>
+                                        <a href="#">寓言传说</a>
+                                    </div>
+                                </div>
+                                <div class="nav_seshow2 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">绘本</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">动漫/卡通</a>
+                                    </div>
+                                </div>
+                                <div class="nav_seshow3 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">科普百科</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">科普</a>
+                                        <a href="#">百科</a>
+                                        <a href="#">历史读物</a>
+                                        <a href="#">生活常识</a>
+                                        <a href="#">益智游戏</a>
+                                        <a href="#">传统文化</a>
+                                    </div>
+                                </div>
+                                <div class="nav_seshow4 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">其他</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">幼儿启蒙</a>
+                                        <a href="#">少儿英语</a>
+                                        <a href="#">励志/成长</a>
+                                        <a href="#">艺术课堂</a>
+                                    </div>
+                                </div>
+                                <div class="nav_seshow5 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">年龄馆</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">0-2岁</a>
+                                        <a href="#">3-6岁</a>
+                                        <a href="#">7岁及以上</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 艺术类 -->
+                        <div class="nav_ys clearfix">
+                            <p><a href="#">艺术</a><i class="iconfont icon-you fr"></i></p>
+                            <a href="#">绘画</a>
+                            <a href="#">书法篆刻</a>
+                            <a href="#">艺术理论</a>
+                            <a href="#">摄影</a>
+                            <a href="#">音乐</a>
+                            <div class="nav_ysshow">
+                                <div class="nav_ysshow1 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">绘画</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">绘画理论</a>
+                                        <a href="#">国画</a>
+                                        <a href="#">油画</a>
+                                        <a href="#">素描速写</a>
+                                        <a href="#">水粉水彩</a>
+                                    </div>
+                                </div>
+                                <div class="nav_ysshow2 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">书法篆刻</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">碑帖</a>
+                                        <a href="#">技法教程</a>
+                                        <a href="#">书法理论</a>
+                                        <a href="#">硬笔书法</a>
+                                        <a href="#">字帖</a>
+                                        <a href="#">篆刻</a>
+                                    </div>
+                                </div>
+                                <div class="nav_ysshow3 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">摄影/设计</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">设计</a>
+                                        <a href="#">摄影后期</a>
+                                        <a href="#">摄影教程</a>
+                                        <a href="#">摄影理论</a>
+                                        <a href="#">摄影器材</a>
+                                        <a href="#">数码摄影</a>
+                                        <a href="#">作品集</a>
+                                    </div>
+                                </div>
+                                <div class="nav_ysshow4 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">舞台影视艺术</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">影视理论</a>
+                                        <a href="#">影视鉴赏</a>
+                                        <a href="#">影视制作</a>
+                                        <a href="#">舞台/戏曲艺术</a>
+                                    </div>
+                                </div>
+                                <div class="nav_ysshow5 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">音乐</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">钢琴</a>
+                                        <a href="#">吉它</a>
+                                        <a href="#">理论/欣赏</a>
+                                        <a href="#">声乐</a>
+                                        <a href="#">通俗音乐</a>
+                                        <a href="#">外国音乐</a>
+                                        <a href="#">中国民族音乐</a>
+                                        <a href="#">作曲/指挥</a>
+                                    </div>
+                                </div>
+                                <div class="nav_ysshow6 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">收藏鉴赏</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">宝石</a>
+                                        <a href="#">雕品</a>
+                                        <a href="#">古代家具</a>
+                                        <a href="#">钱币</a>
+                                        <a href="#">收藏百科</a>
+                                        <a href="#">收藏随笔</a>
+                                        <a href="#">书画</a>
+                                        <a href="#">陶瓷</a>
+                                        <a href="#">玉器</a>
+                                    </div>
+                                </div>
+                                <div class="nav_ysshow7 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">更多</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">艺术理论</a>
+                                        <a href="#">雕塑</a>
+                                        <a href="#">工艺美术</a>
+                                        <a href="#">建筑艺术</a>
+                                        <a href="#">民间艺术</a>
+                                        <a href="#">人体艺术</a>
+                                        <a href="#">艺术类考试</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 生活类 -->
+                        <div class="nav_sh clearfix">
+                            <p><a href="#">生活</a><i class="iconfont icon-you fr"></i></p>
+                            <a href="#">美食</a>
+                            <a href="#">保健/心理健康</a>
+                            <a href="#">旅游</a>
+                            <a href="#">家庭教育</a>
+                            <a href="#">家居休闲</a>
+                            <div class="nav_shshow">
+                                <div class="nav_shshow1 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">美食</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">饮食文化</a>
+                                        <a href="#">保健食谱</a>
+                                        <a href="#">家常食谱</a>
+                                        <a href="#">八大菜系</a>
+                                        <a href="#">餐饮指南</a>
+                                        <a href="#">世界美食</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_shshow2 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">保健/心理健康</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">健康百科</a>
+                                        <a href="#">健身</a>
+                                        <a href="#">心里健康</a>
+                                        <a href="#">中老年</a>
+                                        <a href="#">中医保健</a>
+                                        <a href="#">常见病</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_shshow3 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">旅游</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">旅游随笔</a>
+                                        <a href="#">旅游攻略</a>
+                                        <a href="#">旅游画册</a>
+                                        <a href="#">城市自助游</a>
+                                        <a href="#">国内自助游</a>
+                                        <a href="#">国外自助游</a>
+                                        <a href="#">地图地理</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_shshow4 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">孕产育儿</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">孕产百科</a>
+                                        <a href="#">育儿百科</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_shshow5 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">更多</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">美丽妆扮</a>
+                                        <a href="#">两性关系</a>
+                                        <a href="#">家居休闲</a>
+                                        <a href="#">个人理财</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 文教类 -->
+                        <div class="nav_wj clearfix">
+                            <p><a href="#">文教</a><i class="iconfont icon-you fr"></i></p>
+                            <a href="#">中小学教辅</a>
+                            <a href="#">外语</a>
+                            <a href="#">教材</a>
+                            <a href="#">医学</a>
+                            <a href="#">计算机</a>
+                            <a href="#">自然科学</a>
+                            <div class="nav_wjshow">
+                                <div class="nav_wjshow1 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">中小学教辅</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">语文阅读</a>
+                                        <a href="#">拓展读物</a>
+                                        <a href="#">高考</a>
+                                        <a href="#">初中通用</a>
+                                        <a href="#">工具书</a>
+                                        <a href="#">教师用书</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_wjshow2 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">外语</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">英语读物</a>
+                                        <a href="#">职业英语</a>
+                                        <a href="#">英语考试</a>
+                                        <a href="#">大学英语</a>
+                                        <a href="#">少儿英语</a>
+                                        <a href="#">更多</a>
+                                    </div>
+                                </div>
+                                <div class="nav_wjshow3 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">教材</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">研究生/本科/专科教材</a>
+                                        <a href="#">职业技术培训</a>
+                                        <a href="#">中小学教材</a>
+                                    </div>
+                                </div>
+                                <div class="nav_wjshow4 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">计算机</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">操作系统/系统开发</a>
+                                        <a href="#">数据库</a>
+                                        <a href="#">信息安全</a>
+                                        <a href="#">程序设计</a>
+                                        <a href="#">电脑杂志</a>
+                                        <a href="#">计算机教材</a>
+                                        <a href="#">计算机考试认证</a>
+                                        <a href="#">计算机理论</a>
+                                        <a href="#">计算机体系结构</a>
+                                        <a href="#">家庭与办公室用书</a>
+                                        <a href="#">企业软件开发与实施</a>
+                                        <a href="#">人工智能</a>
+                                        <a href="#">软件工程/开发项目管理</a>
+                                    </div>
+                                </div>
+                                <div class="nav_wjshow5 clearfix">
+                                    <div class="lef fl">
+                                        <a href="#">更多</a>
+                                    </div>
+                                    <div class="righ fr">
+                                        <a href="#">考试</a>
+                                        <a href="#">家庭教育</a>
+                                        <a href="#">自然科学</a>
+                                        <a href="#">科普读物</a>
+                                        <a href="#">医学</a>
+                                        <a href="#">农林业</a>
+                                        <a href="#">工业技术</a>
+                                        <a href="#">建筑</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="fr" >全部商品分类>></a>
+                    </div>
+                </div>
+                <!-- 右边的导航 -->
+                <ul class="nav_r fr">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">淘书团</a></li>
+                    <li><a href="#">畅销榜</a></li>
+                    <li><a href="#"><img src="./img/09.xingxing.png" alt="">五星书</a></li>
+                    <li><a href="#">新上架</a></li>
+                    <li><a href="#">9块9包邮</a></li>
+                    <li><a href="#">出版社浏览</a></li>
+                    <li><a href="#">闲情雅趣</a></li>
+                    <li><a href="#">批发</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 轮播图区域 -->
+        <div id="carousel">
+            <div class="carousel con clearfix">
+                <!-- 左边的区域 -->
+                <div class="carousel_l fl">
+                    <div class="carousel_l_img">
+                        <a href="#"><img src="./img/carousel_01.jpg" alt=""></a>
+                        <a href="#"><img src="./img/carousel_02.jpg" alt=""></a>
+                    </div>
+                </div>
+                <!-- 右边的区域 -->
+                <div class="carousel_r fr">
+                    <ul class="banner">
+                        <li><img src="./img/carousel_1.jpg" alt=""></li>
+                        <li><img src="./img/carousel_2.jpg" alt=""></li>
+                        <li><img src="./img/carousel_3.jpg" alt=""></li>
+                        <li><img src="./img/carousel_4.jpg" alt=""></li>
+                        <li><img src="./img/carousel_5.jpg" alt=""></li>
+                        <li><img src="./img/carousel_6.jpg" alt=""></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

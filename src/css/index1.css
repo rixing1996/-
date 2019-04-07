@@ -79,6 +79,7 @@
     display: none;
     box-sizing: border-box;
     padding:0 8px;
+    z-index: 2;
 }
 #login .login_r .login_r_li3 .login_r_li3_d:before{
     left:0px;
@@ -97,7 +98,7 @@
 }
 /* 手机中图 */
 #login .login_r .login_r_li5 .login_r_li5_d{
-    width: 160px;
+    width: 170px;
     background: #fff;
     position: absolute;
     border:1px solid rgb(218, 218, 218);
@@ -106,7 +107,436 @@
     display: none;
     box-sizing: border-box;
     padding:0 8px;
+    z-index: 2;
 }
 #login .login_r .login_r_li5 .login_r_li5_d:before{
     right:0px;
+}
+#login .login_r .login_r_li5 .login_r_li5_d>div{
+    height: 80px;
+    margin:5px 0;
+    padding-left: 87px;
+}
+#login .login_r .login_r_li5 .login_r_li5_d>div>p{
+    line-height: 14px;
+    color:rgb(102, 102, 102);
+}
+#login .login_r .login_r_li5 .login_r_li5_d>div>p.login_r_li5_p1{
+    color:rgb(230, 0, 0);
+    line-height: 28px;
+}
+#login .login_r .login_r_li5 .login_r_li5_d .login_r_li5_d1{
+    background: url(../img/01.weibo.jpg) left center no-repeat;
+}
+#login .login_r .login_r_li5 .login_r_li5_d .login_r_li5_d2{
+    background: url(../img/02.weixin.jpg) left center no-repeat;
+}
+#login .login_r .login_r_li5 .login_r_li5_d .login_r_li5_d3{
+    background: url(../img/03.iphone.jpg) left center no-repeat;
+}
+/* LOGO区域 */
+#logo{
+    background: rgb(255, 255, 255);
+}
+/* LOGO图标 */
+#logo .logo_a1{
+    display: block;
+    margin:20px 70px 20px 0;
+}
+/* 中间的搜索区域 */
+#logo .logo_d2{
+    margin-top: 18px;
+}
+#logo .logo_d2>form{
+    position: relative;
+}
+/* 输入框 */
+#logo .logo_d2 .logo_i{
+    width: 508px;
+    height: 42px;
+    border:2px solid rgb(230, 0, 0);
+    font-size: 12px;
+    color:rgb(102, 102, 102);
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+/* 提交框 */
+#logo .logo_d2 .logo_s{
+    width:90px;
+    height: 42px;
+    box-sizing: border-box;
+    background: rgb(230, 0, 0);
+    font-size: 14px;
+    color:#fff;
+}
+/* 下滑框 */
+#logo .logo_d2 .logo_o{
+    width: 82px;
+    height: 38px;
+    background: rgb(255, 255, 255);
+    position:absolute;
+    top:2px;
+    left:423px;
+    color:rgb(153, 153, 153);
+    font-size: 12px;
+    text-align: center;
+    line-height: 38px;
+    box-sizing: border-box;
+    border-left: 1px solid rgb(219, 219, 219);
+}
+#logo .logo_d2 .logo_o:hover .logo_o1{
+    display: block;
+}
+#logo .logo_d2 .logo_o>span{
+    margin-right: 3px;
+}
+#logo .logo_d2 .logo_o>i{
+    font-size: 12px;
+}
+#logo .logo_d2 .logo_o .logo_o1{
+    box-sizing: border-box;
+    width: 82px;
+    border:1px solid rgb(219, 219, 219);
+    border-top: 0 none;
+    position:absolute;
+    left:-1px;
+    top:38px;
+    background: white;
+    display: none;
+}
+#logo .logo_d2 .logo_o .logo_o1>p{
+    text-align: left;
+    line-height: 24px;
+    padding:0 8px;
+}
+#logo .logo_d2 .logo_o .logo_o1>p:hover{
+    background: rgb(245, 245, 245);
+    color:rgb(224, 38, 38);
+}
+#logo .logo_d2 .logo_o .logo_o1>p:first-child{
+    background: rgb(245, 245, 245);
+    color:rgb(224, 38, 38);
+}
+#logo .logo_d2 .logo_a2{
+    font-size: 12px;
+    color:rgb(230, 0, 0);
+    margin-left: 13px;
+}
+#logo .logo_d2 .logo_a2:hover{
+    text-decoration: underline;
+}
+/* 输入框下面的点击 */
+#logo .logo_d2 .logo_d3>a{
+    font-size: 12px;
+    margin-right: 30px;
+    line-height: 26px;
+    color:rgb(153, 153, 153);
+}
+#logo .logo_d2 .logo_d3>a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 右边的轮播图 */
+#logo .logo_r{
+    margin:22px 20px 0 0;
+}
+#logo .logo_r>span{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    background: url(../img/04.png) -1px -27px no-repeat;
+    vertical-align: middle;
+}
+#logo .logo_r .logo_a3{
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    vertical-align: middle;
+}
+/* 导航区域 */
+#nav{
+    background: rgb(255, 255, 255);
+    border-bottom:3px solid rgb(230, 0, 0);
+}
+/* 左边的导航 */
+#nav .nav_l{
+    width: 200px;
+    font-size: 16px;
+    line-height: 40px;
+    background: rgb(230, 0, 0);
+    color:rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding-left: 10px;
+    position: relative;
+}
+#nav .nav_l>span{
+    margin:0 50px 0 10px;
+}
+#nav .nav_l .nav_class{
+    box-sizing: border-box;
+    width: 200px;
+    border:1px solid rgb(230, 0, 0);
+    position:absolute;
+    background: white;
+    left:0px;
+    top: 40px;
+}
+/* 左边导航分类区域共同样式 */
+#nav .nav_l .nav_class>div{
+    padding:0 10px 5px 10px;
+    border-bottom:1px solid rgb(255, 211, 212);
+    position: relative;
+}
+#nav .nav_l .nav_class>div:hover>p>i{
+    color:rgb(240, 130, 0);
+}
+/* 隐藏的div */
+#nav .nav_l .nav_class>div>div{
+    width: 760px;
+    box-sizing: border-box;
+    padding:15px;
+    border:3px solid rgb(230, 0, 0);
+    display: none;
+}
+/* ====================== */
+#nav .nav_l .nav_class>a{
+    color:rgb(102, 102, 102);
+    font-size: 12px;
+    line-height: 22px;
+}
+#nav .nav_l .nav_class>a:hover{
+    text-decoration: underline;
+}
+/* =============== */
+#nav .nav_l .nav_class>div>p{
+    line-height: 38px;
+}
+#nav .nav_l .nav_class>div>p>a{
+    color:rgb(230, 0, 0);
+}
+#nav .nav_l .nav_class>div>p>a:hover{
+    text-decoration: underline;
+}
+#nav .nav_l .nav_class>div>p>i{
+    color:rgb(102, 126, 181);
+    font-size: 12px;
+}
+/* ================== */
+#nav .nav_l .nav_class>div>a{
+    margin-right: 17px;
+    font-size: 12px;
+    color:#666;
+    float: left;
+    line-height: 25px;
+}
+#nav .nav_l .nav_class>div>a:hover{
+    color:rgb(230, 0, 0);
+}
+/* ================= */
+/* 取消最后一个div的下边框 */
+#nav .nav_l .nav_class>div.nav_wj{
+    border-bottom:0 none;
+}
+/* =============== */
+#nav .nav_l .nav_class>div:hover{
+    border:2px solid rgb(230, 0, 0);
+    padding:0px 8px 4px;
+    margin-top: -2px;
+}
+/* ========================================= */
+/* 文学类的隐藏div */
+#nav .nav_l .nav_class .nav_wx:hover .nav_wxshow{
+    display: block;
+}
+#nav .nav_l .nav_class .nav_wx .nav_wxshow{
+    padding:10px 20px 10px 10px;
+    position: absolute;
+    left:194px;
+    top:-1px;
+}
+#nav .nav_l .nav_class .nav_wx .nav_wxshow:before{
+    content:"";
+    width: 4px;
+    height: 112.5px;
+    background: white;
+    position: absolute;
+    top:0.5px;
+    left:-4px;
+}
+/* 社科类的隐藏div */
+#nav .nav_l .nav_class .nav_sk:hover .nav_skshow{
+    display: block;
+}
+#nav .nav_l .nav_class .nav_sk .nav_skshow{
+    padding:10px 20px 10px 10px;
+    position: absolute;
+    left:194px;
+    top:-119px;
+}
+#nav .nav_l .nav_class .nav_sk .nav_skshow:before{
+    content:"";
+    width: 4px;
+    height: 140px;
+    background: white;
+    position: absolute;
+    top:116.5px;
+    left:-4px;
+}
+/* 少儿类的隐藏div */
+#nav .nav_l .nav_class .nav_se:hover .nav_seshow{
+    display: block;
+}
+#nav .nav_l .nav_class .nav_se .nav_seshow{
+    padding:10px 20px 10px 10px;
+    position: absolute;
+    left:194px;
+    top:-13px;
+}
+#nav .nav_l .nav_class .nav_se .nav_seshow:before{
+    content:"";
+    width: 4px;
+    height: 114.5px;
+    background: white;
+    position: absolute;
+    top:10.5px;
+    left:-4px;
+}
+/* 艺术类的隐藏div */
+#nav .nav_l .nav_class .nav_ys:hover .nav_ysshow{
+    display: block;
+}
+#nav .nav_l .nav_class .nav_ys .nav_ysshow{
+    padding:10px 20px 10px 10px;
+    position: absolute;
+    left:194px;
+    top:-60px;
+}
+#nav .nav_l .nav_class .nav_ys .nav_ysshow:before{
+    content:"";
+    width: 4px;
+    height: 90.5px;
+    background: white;
+    position: absolute;
+    top:57.5px;
+    left:-4px;
+}
+/* 生活类的隐藏div */
+#nav .nav_l .nav_class .nav_sh:hover .nav_shshow{
+    display: block;
+}
+#nav .nav_l .nav_class .nav_sh .nav_shshow{
+    padding:10px 20px 10px 10px;
+    position: absolute;
+    left:194px;
+    top:-28px;
+}
+#nav .nav_l .nav_class .nav_sh .nav_shshow:before{
+    content:"";
+    width: 4px;
+    height: 90px;
+    background: white;
+    position: absolute;
+    top:25.5px;
+    left:-4px;
+}
+/* 文教类的隐藏div */
+#nav .nav_l .nav_class .nav_wj:hover .nav_wjshow{
+    display: block;
+}
+#nav .nav_l .nav_class .nav_wj .nav_wjshow{
+    padding:10px 20px 10px 10px;
+    position: absolute;
+    left:194px;
+    top:-78px;
+}
+#nav .nav_l .nav_class .nav_wj .nav_wjshow:before{
+    content:"";
+    width: 4px;
+    height: 90.5px;
+    background: white;
+    position: absolute;
+    top:75.5px;
+    left:-4px;
+}
+/* ======================================== */
+/* 第一个、第二个、第三个 */
+#nav .nav_l .nav_class>div>div>div .lef>a{
+    font-size: 10px;
+    color:rgb(230, 0, 0);
+    font-weight: 600;
+}
+#nav .nav_l .nav_class>div>div>div .righ>a{
+    font-size: 12px;
+    color:rgb(102, 102, 102);
+    margin:0 20px;
+}
+/* ========== */
+/* 隐藏div里的最大儿子 */
+#nav .nav_l .nav_class>div>div>div{
+    border-bottom:1px solid rgb(240, 240, 240);
+}
+#nav .nav_l .nav_class>div>div>div:last-child{
+    border-bottom:0 none;
+}
+/* =========== */
+#nav .nav_l .nav_class>div>div>div>div:first-child{
+    width: 70px;
+}
+#nav .nav_l .nav_class>div>div>div>div:first-child>a{
+    float: left;
+    line-height: 23px;
+}
+#nav .nav_l .nav_class>div>div>div>div:last-child{
+    width: 654px;
+}
+#nav .nav_l .nav_class>div>div>div>div:last-child>a{
+    float: left;
+    line-height: 23px;
+}
+#nav .nav_l .nav_class>div>div>div>div:last-child>a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 右边的导航 */
+#nav .nav_r>li{
+    float: left;
+    margin:0 25px;
+}
+#nav .nav_r>li:first-child>a{
+    color:rgb(230, 0, 0);
+}
+#nav .nav_r>li>a{
+    vertical-align: middle;
+    color:rgb(51, 51, 51);
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 18px;
+}
+#nav .nav_r>li>a:hover{
+    color:rgb(230, 0, 0);
+}
+#nav .nav_r>li>a>img{
+    margin-right: 5px;
+}
+/* 轮播图区域 */
+#carousel{
+    background: #fff;
+    padding:10px 0;
+}
+/* 左边的区域 */
+#carousel .carousel_l{
+    width: 200px;
+}
+#carousel .carousel_l>div{
+    margin-top: 678px;
+}
+#carousel .carousel_l>div>a{
+    display: block;
+}
+/* 右边的区域 */
+#carousel .carousel_r{
+    width: 990px;
+}
+/* banner区域 */
+#carousel .carousel_r .banner>li{
+    float: left;
 }

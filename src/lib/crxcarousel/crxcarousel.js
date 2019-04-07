@@ -31,24 +31,24 @@
 
             }
             // 生成页码
-            var $sign;
-            var sign = () => {
-                $sign = $("<div></div>");
-                $sign.addClass("page").appendTo($(this));
-                for(var i=1;i<len;i++){
-                    $("<span>"+i+"</span>").appendTo($sign);
-                }
-                clickpage();
-            }
+            // var $sign;
+            // var sign = () => {
+            //     $sign = $("<div></div>");
+            //     $sign.addClass("page").appendTo($(this));
+            //     for(var i=1;i<len;i++){
+            //         $("<span>"+i+"</span>").appendTo($sign);
+            //     }
+            //     clickpage();
+            // }
             //点击页码，改变索引、图片
-            var clickpage = () => {
-                $sign.children().click(function(){
-                    obj.idx = $(this).text() - 2;
-                    auto();
-                    $sign.children().removeClass("active");
-                    $(this).addClass("active");
-                });
-            }
+            // var clickpage = () => {
+            //     $sign.children().click(function(){
+            //         obj.idx = $(this).text() - 2;
+            //         auto();
+            //         $sign.children().removeClass("active");
+            //         $(this).addClass("active");
+            //     });
+            // }
             //生成左右按钮
             // var $zuo;
             // var $you;
@@ -89,18 +89,18 @@
             }
             //执行滚动
             var auto = () => {
-                $sign.children().removeClass("active");
+                // $sign.children().removeClass("active");
                 obj.idx++;
                 
                 if(obj.idx > len-1){
                     obj.idx = 1;
                     $ul.css({"left":0,"top":0});
                 }
-                if(obj.idx == len-1){
-                    $sign.children()[0].classList.add("active");  
-                }else if(obj.idx < len-1){
-                    $sign.children()[obj.idx].classList.add("active");              
-                }
+                // if(obj.idx == len-1){
+                //     $sign.children()[0].classList.add("active");  
+                // }else if(obj.idx < len-1){
+                //     $sign.children()[obj.idx].classList.add("active");              
+                // }
                 if(obj.type == "vertical"){
                     $ul.animate({"top":-obj.idx * obj.height},500);
                 }else if(obj.type == "horizontal"){
@@ -112,9 +112,9 @@
             }
             init();
             slide();
-            sign();
+            // sign();
             // buttons();
-            $sign.children()[0].classList.add("active");
+            // $sign.children()[0].classList.add("active");
         })
     }
 })(jQuery)
