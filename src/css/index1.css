@@ -297,6 +297,8 @@
     padding:15px;
     border:3px solid rgb(230, 0, 0);
     display: none;
+    background: white;
+    z-index: 99;
 }
 /* ====================== */
 #nav .nav_l .nav_class>a{
@@ -537,6 +539,396 @@
     width: 990px;
 }
 /* banner区域 */
-#carousel .carousel_r .banner>li{
+#carousel .carousel_r .banner{
+    width: 990px;
+    height: 360px;
+    position: relative;
+}
+#carousel .carousel_r .banner>ul{
+    position: relative;
+    height: 360px;
+}
+#carousel .carousel_r .banner>ul>li{
+    position: absolute;
+    left:0;
+    top:0;
+}
+/* 左右按键 */
+#carousel .carousel_r .banner .banner_btn{  
+    width: 990px;
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+#carousel .carousel_r .banner .banner_btn>span{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color:rgb(255, 255, 255);
+    background: rgba(158, 142, 113,0.7);
+    display: none;
+}
+#carousel .carousel_r .banner:hover .banner_btn>span{
+    display: block;
+}
+/* 下面的显示栏 */
+#carousel .carousel_r .banner .banner_show{
+    position: absolute;
+    bottom:0;
+}
+#carousel .carousel_r .banner .banner_show>span{
+    float: left;
+    width: 165px;
+    height: 34px;
+    line-height: 34px;
+    text-align:center;
+    font-size: 12px;
+    color:white;
+    background: rgba(49, 41, 36,0.8);
+}
+/* 热书区域 */
+#carousel .carousel_r .hotbook{
+    width: 750px;
+    margin-top: 10px;
+    padding:10px;
+    background: rgb(239, 242, 250);
+}
+/* 导航区域 */
+#carousel .carousel_r .hotbook .hot_ban>li{
+    float: left;
+    padding:10px 25px;
+    font-size: 16px;
+}
+#carousel .carousel_r .hotbook .hot_ban>li:hover{
+    background: white;
+    border-top: 2px solid rgb(230, 0, 0);
+    padding-top: 8px;
+    color:rgb(230, 0, 0);
+    font-weight: 600;
+}
+/* ===================== */
+/* 显示区域 */
+#carousel .carousel_r .hotbook .hot_show{
+    background: white;
+}
+/* 上部分左边 */
+#carousel .carousel_r .hotbook .hot_show .hot_show_t{
+    border-bottom:1px solid  rgb(238, 241, 249);
+    padding:10px 30px;
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_t>a>img{
+    width: 160px;
+    height: 160px;
+}
+/* 上部分右边 */
+#carousel .carousel_r .hotbook .hot_show .hot_show_t>div{
+    width: 510px;
+}
+/* 标题 */
+#carousel .carousel_r .hotbook .hot_show .hot_show_t>div>a{
+    display: block;
+    font-size: 16px;
+    color:black;
+    font-weight: 600;
+    line-height: 40px;
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_t>div>a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 价格 */
+#carousel .carousel_r .hotbook .hot_show .hot_show_t>div>p{
+    font-size: 18px;
+    line-height: 22px;
+    color:rgb(153, 153, 166);
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_t>div>p>span{
+    margin-right: 15px;
+    text-decoration: line-through;
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_t>div>p>span:first-child{
+    text-decoration: none;
+    color:rgb(230, 0, 0);
+}
+/* 描述介绍 */
+#carousel .carousel_r .hotbook .hot_show .hot_show_t>div>div{
+    font-size: 12px;
+    color:#666;
+    line-height: 24px;
+    text-indent:2em;
+}
+/* 下部分 */
+/* 图片部分 */
+#carousel .carousel_r .hotbook .hot_show .hot_show_b>li{
+    float: left;
+    margin:10px 14px 5px 10px;
+    width: 158px;
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_b>li>a{
+    display:block;
+    font-size: 12px;
+    color:rgb(51, 51, 51);
+    line-height: 18px;
+    margin-top:5px;
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_b>li>a:hover{
+    color:rgb(230, 0, 0);
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_b>li>a>img{
+    width:158px;
+    height: 158px;
+    display:block;
+}
+/* 价格 */
+#carousel .carousel_r .hotbook .hot_show .hot_show_b>li>p{
+    margin-bottom:3px;
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_b>li>p>span:first-child{
+    font-size: 16px;
+    margin-right: 5px;
+    color:rgb(230, 0, 0);
+}
+#carousel .carousel_r .hotbook .hot_show .hot_show_b>li>p>span:last-child{
+    font-size: 12px;
+    color:rgb(153, 153, 153);
+    text-decoration: line-through;
+}
+/* ======================= */
+/* 畅销榜区域 */
+#carousel .carousel_r .sale{
+    width: 229px;
+    margin-top: 10px;
+    background:rgb(240, 240, 240);
+}
+/* 标题 */
+#carousel .carousel_r .sale>h4{
+    line-height: 32px;
+    background:white;
+}
+#carousel .carousel_r .sale>h4>span{
+    font-size: 16px;
+    color:rgb(230, 0, 0);
+}
+#carousel .carousel_r .sale>h4>a{
+    font-size: 12px;
+    color:rgb(153, 153, 153);
+}
+#carousel .carousel_r .sale>h4>a:hover{
+    text-decoration: underline;
+}
+/* 导航标题 */
+#carousel .carousel_r .sale .sale_ban{
+    background: white;
+}
+#carousel .carousel_r .sale .sale_ban>li{
+    float:left;
+    font-size: 12px;
+}
+#carousel .carousel_r .sale .sale_ban>li>a{
+    padding:8px 16px;
+    display:block;
+    color:rgb(102, 102, 102);
+    border:1px solid rgb(230, 230, 230);
+    border-left:0 none;
+}
+#carousel .carousel_r .sale .sale_ban>li>a:hover{
+    border-top:2px solid rgb(230, 0, 0);
+    border-bottom:0 none;
+    padding-top:7px;
+    padding-bottom:9px;
+}
+#carousel .carousel_r .sale .sale_ban>li:first-child>a{
+    border-left:1px solid rgb(230, 230, 230);
+}
+/* 列表内容 */
+#carousel .carousel_r .sale .sale_content{
+    background:white;
+    width: 229px;
+}
+#carousel .carousel_r .sale .sale_content>div{
+    padding:8px;
+    border:1px solid rgb(240, 240, 240);
+    border-top: 0 none;
+    font-size: 12px;
+}
+#carousel .carousel_r .sale .sale_content>div>span{
+    margin-right: 15px;
+}
+/* 图片点击 */
+#carousel .carousel_r .sale .sale_content>div>div.sc_more{
+    display:inline-block;
+    vertical-align: top;
+}
+#carousel .carousel_r .sale .sale_content>div>div.sc_more>a>img{
+    width: 85px;
+    height: 85px;
+}
+/* 图片右边的样式 */
+#carousel .carousel_r .sale .sale_content>div>div.sc_more>div{
+    width: 93px;
+}
+#carousel .carousel_r .sale .sale_content>div>div.sc_more>div>a{
+    font-size: 12px;
+    color:rgb(51, 51, 51);
+    line-height: 23px;
+    display:block;
+}
+#carousel .carousel_r .sale .sale_content>div>div.sc_more>div>a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 价格 */
+#carousel .carousel_r .sale .sale_content>div>div.sc_more>div>p>span{
+    font-size: 10px;
+}
+#carousel .carousel_r .sale .sale_content>div>div.sc_more>div>p>span:first-child{
+    color:rgb(230, 0, 0);
+}
+#carousel .carousel_r .sale .sale_content>div>div.sc_more>div>p>span:last-child{
+    color:rgb(215, 181, 153);
+    text-decoration:line-through;
+}
+/* ===================== */
+/* 显示更多 */
+#carousel .carousel_r .sale>a{
+    font-size: 12px;
+    color:rgb(102, 102, 102);
+    line-height: 19px;
+}
+#carousel .carousel_r .sale>a:hover{
+    text-decoration:underline;
+}
+/* 三张小图片 */
+#pic{
+    background:white;
+    margin:10px 0;
+}
+#pic .pic>a{
     float: left;
 }
+#pic .pic>a:first-child{
+    margin-right:10.5px;
+}
+#pic .pic>a:last-child{
+    margin-left:10.5px;
+}
+/* =================== */
+/* 淘书团热销 */
+#team{
+    background:white;
+}
+/* 标题 */
+#team .team>a{
+    display:block;
+    line-height: 58px;
+    font-size: 16px;
+    color:rgb(51, 51, 51);
+    font-weight: 600;
+    border-bottom:3px solid rgb(230, 0, 0);
+    font-style: oblique;
+}
+#team .team>a>span:first-child{
+    font-size: 20px;
+    color:rgb(230, 0, 0);
+}
+#team .team>a>span:last-child{
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    color:rgb(102, 102, 102);
+}
+#team .team>a:hover>span:last-child{
+    text-decoration:underline;
+}
+/* 内容区域 */
+#team .team .team_content{
+    margin-top:18px;
+}
+#team .team .team_content>ul>li{
+    float: left;
+    border:1px solid rgb(230, 230, 230);
+    margin:0 8px;
+    background:rgb(237, 248, 255);
+    padding-bottom:8px;
+}
+#team .team .team_content>ul>li:first-child{
+    margin-left: 0;
+}
+#team .team .team_content>ul>li:last-child{
+    margin-right: 0;
+}
+/* 图片 */
+#team .team .team_content>ul>li>a{
+    display:block;
+}
+#team .team .team_content>ul>li>a>img{
+    display:block;
+    width:285px;
+}
+/* 详情 */
+#team .team .team_content>ul>li>div{
+    width: 285px;
+    box-sizing: border-box;
+    padding:0 15px;
+}
+#team .team .team_content>ul>li>div>a{
+    font-size: 12px;
+    color:rgb(102, 102, 102);
+    line-height: 20px;
+}
+#team .team .team_content>ul>li>div>a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 价格 */
+#team .team .team_content>ul>li>div>p{
+    font-size: 14px;
+    color:rgb(230, 0, 0);
+}
+#team .team .team_content>ul>li>div>p>span{
+    font-size: 12px;
+    text-decoration:line-through;
+    color:rgb(153, 153, 153);
+}
+#team .team .team_content>ul>li>div>p>span:first-child{
+    font-size: 20px;
+    text-decoration:none;
+    color:rgb(230, 0, 0);
+    margin-right:5px;
+}
+#team .team .team_content>ul>li>div>p>span:last-child{
+    padding:0 5px;
+    color:white;
+    background:rgb(91, 215, 255);
+    margin-top: 10px;
+    text-decoration:none;
+}
+/* 包邮区 */
+#mail{
+    background:white;
+}
+/* 标题 */
+#mail .mail>a{
+    display:block;
+    line-height: 58px;
+    font-size: 16px;
+    color:rgb(51, 51, 51);
+    font-weight: 600;
+    border-bottom:3px solid rgb(230, 0, 0);
+    font-style: oblique;
+    background:rgb(245, 245, 245);
+    margin-top:20px;
+}
+#mail .mail>a>span:first-child{
+    font-size: 20px;
+    color:rgb(230, 0, 0);
+}
+#mail .mail>a>span:last-child{
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    color:rgb(102, 102, 102);
+}
+#mail .mail>a:hover>span:last-child{
+    text-decoration:underline;
+}
+/* 内容区域 */
