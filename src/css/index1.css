@@ -913,7 +913,6 @@
     font-size: 16px;
     color:rgb(51, 51, 51);
     font-weight: 600;
-    border-bottom:3px solid rgb(230, 0, 0);
     font-style: oblique;
     background:rgb(245, 245, 245);
     margin-top:20px;
@@ -932,3 +931,524 @@
     text-decoration:underline;
 }
 /* 内容区域 */
+#mail .mail>ul{
+    margin-top:10px;
+}
+#mail .mail>ul>li{
+    width:240px;
+    height:223px;
+    box-sizing:border-box;
+    float:left;
+    border-top:3px solid rgb(230, 230, 230);
+    border-left:1px solid rgb(230, 230, 230);
+    border-bottom:1px solid rgb(230, 230, 230);
+    position: relative;
+    padding:10px;
+}
+#mail .mail>ul>li:last-child{
+    border-right:1px solid rgb(230, 230, 230);
+}
+#mail .mail>ul>li:hover{
+    border-top:3px solid rgb(230, 0, 0);
+}
+/* 小标题 */
+#mail .mail>ul>li>a{
+    display:block;
+    font-size: 14px;
+    color:#333;
+}
+#mail .mail>ul>li>a:hover{
+    color:rgb(230, 0, 0);
+}
+#mail .mail>ul>li>span{
+    font-size: 13px;
+    text-decoration:line-through;
+    color:rgb(153, 153, 153);
+}
+/* 小图片 */
+#mail .mail>ul>li>img{
+    display:block;
+    position:absolute;
+    width:60px;
+    height:60px;
+    top:57px;
+    left:13px;
+}
+#mail .mail>ul>li>a:last-child{
+    width:158px;
+    height:158px;
+    position:absolute;
+    right:0;
+    bottom:10px;
+}
+#mail .mail>ul>li>a:last-child>img{
+    width:110px;
+    height:158px;
+    margin-left:25px;
+    transition: all 0.5s;
+}
+#mail .mail>ul>li>a:last-child>img:hover{
+    transform: translate(-10px);
+}
+/* ========================== */
+/* 文学图书区域 */
+#wxbook{
+    background:white;
+}
+/* 标题导航区 */
+#wxbook .wxbook .wxbook_ban{
+    background:rgb(245, 245, 245);
+    margin-top:20px;
+}
+/* 标题 */
+#wxbook .wxbook .wxbook_ban>a{
+    box-sizing: border-box;
+    width: 210px;
+    display: block;
+    line-height: 55px;
+    background: rgb(0, 182, 240);
+    font-size: 22px;
+    color:white;
+    font-weight: 900;
+    padding-left: 20px;
+}
+/* 导航区 */
+#wxbook .wxbook .wxbook_ban>ul>li{
+    float:left;
+    padding:0 22px;
+}
+#wxbook .wxbook .wxbook_ban>ul>li>a{
+    font-size: 15px;
+    display: block;
+    color:rgb(51, 51, 51);
+    padding-top: 18px;
+}
+#wxbook .wxbook .wxbook_ban>ul>li:hover>a{
+    border-top: 3px solid rgb(0, 182, 240);
+    color:rgb(0, 182, 240);
+    padding-top: 15px;
+}
+/* 内容区域 */
+/* 左边的内容区域 */
+#wxbook .wxbook .wxbook_content{
+    margin-top: 10px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_l{
+    box-sizing: border-box;
+    width: 210px;
+    background:rgb(189, 238, 254);
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_l>a{
+    display: block;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_l>a>img{
+    width: 210px;
+    height: 335px;
+}
+/* 文学排行榜 */
+#wxbook .wxbook .wxbook_content .wxbook_content_l>div{
+    padding:15px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_l>div>p{
+    font-size: 14px;
+    color:rgb(61, 142, 219);
+    line-height: 32px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_l>div>a{
+    display: block;
+    font-size: 12px;
+    color:rgb(102, 102, 102);
+    line-height: 25px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_l>div>a:hover{
+    color:rgb(7, 161, 210);
+}
+/* 中间的内容 */
+#wxbook .wxbook .wxbook_content .wxbook_content_c{
+    width: 740px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li{
+    float: left;
+    width: 185px;
+    padding-bottom:20px;
+    margin-top:10px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li>a{
+    display: block;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li>a>img{
+    width: 115px;
+    height: 158px;
+    margin-left: 30px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li>a:first-child+a{
+    font-size: 12px;
+    padding-left: 28px;
+    color:rgb(51, 51, 51);
+    line-height: 26px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li>a:first-child+a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 作者 */
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li>p{
+    font-size: 12px;
+    color:#666;
+    padding-left: 28px;
+    line-height: 20px;
+}
+/* 价格 */
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li>div{
+    padding-left: 28px;
+    line-height: 27px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li>div>span:first-child{
+    font-size: 15px;
+    color:rgb(230, 0, 0);
+    margin-right: 5px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_c>li>div>span:last-child{
+    font-size: 12px;
+    color:rgb(153, 153, 153);
+    text-decoration: line-through;
+}
+/* 右边的内容 */
+#wxbook .wxbook .wxbook_content .wxbook_content_r{
+    width: 230px;
+    box-sizing: border-box;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_r .wxbook_content_r1>a{
+    display:block;
+    border:1px solid rgb(230, 230, 230);
+    border-bottom:0 none;
+    color:rgb(51, 51, 51);
+    line-height: 32px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_r .wxbook_content_r1>a:last-child{
+    border-bottom:1px solid rgb(230, 230, 230);
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_r .wxbook_content_r1>a>img{
+    width: 228px;
+    height: 90px;
+    display: block;
+}
+/* 下面的图片 */
+#wxbook .wxbook .wxbook_content .wxbook_content_r>a{
+    display: block;
+    margin-top: 10px;
+}
+#wxbook .wxbook .wxbook_content .wxbook_content_r>a>img{
+    width: 230px;
+    height: 190px;
+}
+/* ============================= */
+/* ========================== */
+/* 社科图书区域 */
+#skbook{
+    background:white;
+}
+/* 标题导航区 */
+#skbook .skbook .skbook_ban{
+    background:rgb(245, 245, 245);
+    margin-top:20px;
+}
+/* 标题 */
+#skbook .skbook .skbook_ban>a{
+    box-sizing: border-box;
+    width: 210px;
+    display: block;
+    line-height: 55px;
+    background: rgb(177, 127, 74);
+    font-size: 22px;
+    color:white;
+    font-weight: 900;
+    padding-left: 20px;
+}
+/* 导航区 */
+#skbook .skbook .skbook_ban>ul>li{
+    float:left;
+    padding:0 22px;
+}
+#skbook .skbook .skbook_ban>ul>li>a{
+    font-size: 15px;
+    display: block;
+    color:rgb(51, 51, 51);
+    padding-top: 18px;
+}
+#skbook .skbook .skbook_ban>ul>li:hover>a{
+    border-top: 3px solid rgb(177, 127, 74);
+    color:rgb(177, 127, 74);
+    padding-top: 15px;
+}
+/* 内容区域 */
+/* 左边的内容区域 */
+#skbook .skbook .skbook_content{
+    margin-top: 10px;
+}
+#skbook .skbook .skbook_content .skbook_content_l{
+    box-sizing: border-box;
+    width: 210px;
+    background:rgb(255, 235, 211);
+}
+#skbook .skbook .skbook_content .skbook_content_l>a{
+    display: block;
+}
+#skbook .skbook .skbook_content .skbook_content_l>a>img{
+    width: 210px;
+    height: 335px;
+}
+/* 历史畅销榜 */
+#skbook .skbook .skbook_content .skbook_content_l>div{
+    padding:15px;
+}
+#skbook .skbook .skbook_content .skbook_content_l>div>p{
+    font-size: 14px;
+    color:rgb(205, 144, 105);
+    line-height: 32px;
+}
+#skbook .skbook .skbook_content .skbook_content_l>div>a{
+    display: block;
+    font-size: 12px;
+    color:rgb(102, 102, 102);
+    line-height: 25px;
+}
+#skbook .skbook .skbook_content .skbook_content_l>div>a:hover{
+    color:rgb(205, 144, 105);
+}
+/* 中间的内容 */
+#skbook .skbook .skbook_content .skbook_content_c{
+    width: 740px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+#skbook .skbook .skbook_content .skbook_content_c>li{
+    float: left;
+    width: 185px;
+    padding-bottom:20px;
+    margin-top:10px;
+}
+#skbook .skbook .skbook_content .skbook_content_c>li>a{
+    display: block;
+}
+#skbook .skbook .skbook_content .skbook_content_c>li>a>img{
+    width: 115px;
+    height: 158px;
+    margin-left: 30px;
+}
+#skbook .skbook .skbook_content .skbook_content_c>li>a:first-child+a{
+    font-size: 12px;
+    padding-left: 28px;
+    color:rgb(51, 51, 51);
+    line-height: 26px;
+}
+#skbook .skbook .skbook_content .skbook_content_c>li>a:first-child+a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 作者 */
+#skbook .skbook .skbook_content .skbook_content_c>li>p{
+    font-size: 12px;
+    color:#666;
+    padding-left: 28px;
+    line-height: 20px;
+}
+/* 价格 */
+#skbook .skbook .skbook_content .skbook_content_c>li>div{
+    padding-left: 28px;
+    line-height: 27px;
+}
+#skbook .skbook .skbook_content .skbook_content_c>li>div>span:first-child{
+    font-size: 15px;
+    color:rgb(230, 0, 0);
+    margin-right: 5px;
+}
+#skbook .skbook .skbook_content .skbook_content_c>li>div>span:last-child{
+    font-size: 12px;
+    color:rgb(153, 153, 153);
+    text-decoration: line-through;
+}
+/* 右边的内容 */
+#skbook .skbook .skbook_content .skbook_content_r{
+    width: 230px;
+    box-sizing: border-box;
+}
+#skbook .skbook .skbook_content .skbook_content_r .skbook_content_r1>a{
+    display:block;
+    border:1px solid rgb(230, 230, 230);
+    border-bottom:0 none;
+    color:rgb(51, 51, 51);
+    line-height: 32px;
+}
+#skbook .skbook .skbook_content .skbook_content_r .skbook_content_r1>a:last-child{
+    border-bottom:1px solid rgb(230, 230, 230);
+}
+#skbook .skbook .skbook_content .skbook_content_r .skbook_content_r1>a>img{
+    width: 228px;
+    height: 90px;
+    display: block;
+}
+/* 下面的图片 */
+#skbook .skbook .skbook_content .skbook_content_r>a{
+    display: block;
+    margin-top: 10px;
+}
+#skbook .skbook .skbook_content .skbook_content_r>a>img{
+    width: 230px;
+    height: 190px;
+}
+/* ============================= */
+/* ========================== */
+/* 少儿图书区域 */
+#sebook{
+    background:white;
+}
+/* 标题导航区 */
+#sebook .sebook .sebook_ban{
+    background:rgb(245, 245, 245);
+    margin-top:20px;
+}
+/* 标题 */
+#sebook .sebook .sebook_ban>a{
+    box-sizing: border-box;
+    width: 210px;
+    display: block;
+    line-height: 55px;
+    background: rgb(252, 101, 182);
+    font-size: 22px;
+    color:white;
+    font-weight: 900;
+    padding-left: 20px;
+}
+/* 导航区 */
+#sebook .sebook .sebook_ban>ul>li{
+    float:left;
+    padding:0 22px;
+}
+#sebook .sebook .sebook_ban>ul>li>a{
+    font-size: 15px;
+    display: block;
+    color:rgb(51, 51, 51);
+    padding-top: 18px;
+}
+#sebook .sebook .sebook_ban>ul>li:hover>a{
+    border-top: 3px solid rgb(252, 101, 182);
+    color:rgb(252, 101, 182);
+    padding-top: 15px;
+}
+/* 内容区域 */
+/* 左边的内容区域 */
+#sebook .sebook .sebook_content{
+    margin-top: 10px;
+}
+#sebook .sebook .sebook_content .sebook_content_l{
+    box-sizing: border-box;
+    width: 210px;
+    background:rgb(255, 235, 211);
+}
+#sebook .sebook .sebook_content .sebook_content_l>a{
+    display: block;
+}
+#sebook .sebook .sebook_content .sebook_content_l>a>img{
+    width: 210px;
+    height: 335px;
+}
+/* 益智启蒙畅销榜 */
+#sebook .sebook .sebook_content .sebook_content_l>div{
+    padding:15px;
+}
+#sebook .sebook .sebook_content .sebook_content_l>div>p{
+    font-size: 14px;
+    color:rgb(252, 101, 182);
+    line-height: 32px;
+}
+#sebook .sebook .sebook_content .sebook_content_l>div>a{
+    display: block;
+    font-size: 12px;
+    color:rgb(102, 102, 102);
+    line-height: 25px;
+}
+#sebook .sebook .sebook_content .sebook_content_l>div>a:hover{
+    color:rgb(252, 101, 182);
+}
+/* 中间的内容 */
+#sebook .sebook .sebook_content .sebook_content_c{
+    width: 740px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+#sebook .sebook .sebook_content .sebook_content_c>li{
+    float: left;
+    width: 185px;
+    padding-bottom:20px;
+    margin-top:10px;
+}
+#sebook .sebook .sebook_content .sebook_content_c>li>a{
+    display: block;
+}
+#sebook .sebook .sebook_content .sebook_content_c>li>a>img{
+    width: 115px;
+    height: 158px;
+    margin-left: 30px;
+}
+#sebook .sebook .sebook_content .sebook_content_c>li>a:first-child+a{
+    font-size: 12px;
+    padding-left: 28px;
+    color:rgb(51, 51, 51);
+    line-height: 26px;
+}
+#sebook .sebook .sebook_content .sebook_content_c>li>a:first-child+a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 作者 */
+#sebook .sebook .sebook_content .sebook_content_c>li>p{
+    font-size: 12px;
+    color:#666;
+    padding-left: 28px;
+    line-height: 20px;
+}
+/* 价格 */
+#sebook .sebook .sebook_content .sebook_content_c>li>div{
+    padding-left: 28px;
+    line-height: 27px;
+}
+#sebook .sebook .sebook_content .sebook_content_c>li>div>span:first-child{
+    font-size: 15px;
+    color:rgb(230, 0, 0);
+    margin-right: 5px;
+}
+#sebook .sebook .sebook_content .sebook_content_c>li>div>span:last-child{
+    font-size: 12px;
+    color:rgb(153, 153, 153);
+    text-decoration: line-through;
+}
+/* 右边的内容 */
+#sebook .sebook .sebook_content .sebook_content_r{
+    width: 230px;
+    box-sizing: border-box;
+}
+#sebook .sebook .sebook_content .sebook_content_r .sebook_content_r1>a{
+    display:block;
+    border:1px solid rgb(230, 230, 230);
+    border-bottom:0 none;
+    color:rgb(51, 51, 51);
+    line-height: 32px;
+}
+#sebook .sebook .sebook_content .sebook_content_r .sebook_content_r1>a:last-child{
+    border-bottom:1px solid rgb(230, 230, 230);
+}
+#sebook .sebook .sebook_content .sebook_content_r .sebook_content_r1>a>img{
+    width: 228px;
+    height: 90px;
+    display: block;
+}
+/* 下面的图片 */
+#sebook .sebook .sebook_content .sebook_content_r>a{
+    display: block;
+    margin-top: 10px;
+}
+#sebook .sebook .sebook_content .sebook_content_r>a>img{
+    width: 230px;
+    height: 190px;
+}
+/* ============================= */
