@@ -1,0 +1,137 @@
+/* 大盒子 */
+html{
+    background: rgb(246, 244, 245);
+}
+/* 头部 */
+#head{
+    background: white;
+    border-bottom:2px solid rgb(230, 0, 0);
+}
+#head .head>a{
+    display: block;
+    margin:23px 0;
+}
+#head .head>div{
+    margin-top: 30px;
+}
+#head .head>div>span{
+    font-size: 12px;
+    color:rgb(26, 26, 26);
+    line-height: 38px;
+    padding-left: 52px;
+    margin-right: 28px;
+    background: url(../img/pic00.png) -140px 2px no-repeat;
+}
+#head .head>div>span:first-child{
+    background: url(../img/pic00.png) 0px 2px no-repeat;
+}
+#head .head>div>span:last-child{
+    background: url(../img/pic00.png) -280px 2px no-repeat;
+    margin-right: 0;
+}
+/* 登录区域 */
+#login .login{
+    background: white;
+    margin-top: 25px;
+}
+#login .login>h2{
+    font-size: 22px;
+    color:#333;
+    font-weight: 900;
+    padding-left: 13px;
+    border-left: 3px solid rgb(230, 0, 0);
+    line-height: 24px;
+    margin: 65px 0 40px 140px;
+    position: relative;
+}
+#login .login>h2>p{
+    font-size: 12px;
+    color:rgb(230, 0, 0);
+    width: 670px;
+    position: absolute;
+    top:5px;
+    left:137px;
+}
+#login .login>h2>p>span{
+    color:rgb(193, 198, 211);
+    margin-right: 5px;
+}
+#login .login>h2>p>a{
+    color:rgb(153, 153, 153);
+}
+/* 表单 */
+#login .login>form{
+    position: relative;
+}
+#login .login>form>label{
+    display: inline-block;
+    text-align: right;
+    font-size: 16px;
+    width: 250px;
+    margin-right: 15px;
+    margin-bottom:40px;
+}
+#login .login>form>p{
+    font-size: 12px;
+    position: absolute;
+    left:264px;
+    color:rgb(102, 102, 102);
+    display: none;
+}
+#login .login>form .p1{
+    top:46px;
+}
+#login .login>form .p2{
+    top:115px;
+}
+#login .login>form .p3{
+    top:185px;
+}
+#login .login>form .p4{
+    top:254px;
+}
+#login .login>form #uname,#upwd,#uupwd{
+    box-sizing: border-box;
+    width: 340px;
+    height: 42px;
+    border:1px solid rgb(220, 220, 220);
+    border-radius:4px;
+    padding-left: 10px;
+}
+#login .login>form .input-val{
+    width: 200px;
+    height: 42px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius:4px;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+#login .login>form #canvas{
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius:4px;
+    height: 42px;
+    width: 100px;
+}
+#login .login>form .btn{
+    display: block;
+    margin: 25px 0 200px 265px;
+    height: 50px;
+    width: 380px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: rgb(230, 0, 0);
+    color:white;
+    border-radius:5px;
+    cursor: pointer;
+}
+/* 尾部 */
+#foot .foot>a{
+    display: block;
+}
+#foot .foot>a>img{
+    width: 1000px;
+}
