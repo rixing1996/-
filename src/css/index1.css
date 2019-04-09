@@ -1452,3 +1452,353 @@
     height: 190px;
 }
 /* ============================= */
+/* ===================== */
+/* 无标题区域 */
+#note{
+    background: white;
+}
+#note .note{
+    margin-top: 20px;
+}
+/* 导航区 */
+#note .note .note_ban{
+    background: rgb(245, 245, 245);
+}
+#note .note .note_ban>ul>li{
+    float:left;
+    padding:0 22px;
+}
+#note .note .note_ban>ul>li>a{
+    font-size: 15px;
+    display: block;
+    color:rgb(51, 51, 51);
+    padding: 18px 5px;
+}
+#note .note .note_ban>ul>li:hover>a{
+    border-top: 3px solid rgb(230,0,0);
+    color:rgb(230,0,0);
+    padding-top: 15px;
+}
+/* 内容区域 */
+/* 中间的内容 */
+#note .note .note_content .note_content_c{
+    width: 950px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+#note .note .note_content .note_content_c>li{
+    float: left;
+    width: 185px;
+    padding-bottom:20px;
+    margin-top:10px;
+}
+#note .note .note_content .note_content_c>li>a{
+    display: block;
+}
+#note .note .note_content .note_content_c>li>a>img{
+    width: 115px;
+    height: 158px;
+    margin-left: 30px;
+}
+#note .note .note_content .note_content_c>li>a:first-child+a{
+    font-size: 12px;
+    padding-left: 28px;
+    color:rgb(51, 51, 51);
+    line-height: 26px;
+}
+#note .note .note_content .note_content_c>li>a:first-child+a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 作者 */
+#note .note .note_content .note_content_c>li>p{
+    font-size: 12px;
+    color:#666;
+    padding-left: 28px;
+    line-height: 20px;
+}
+/* 价格 */
+#note .note .note_content .note_content_c>li>div{
+    padding-left: 28px;
+    line-height: 27px;
+}
+#note .note .note_content .note_content_c>li>div>span:first-child{
+    font-size: 15px;
+    color:rgb(230, 0, 0);
+    margin-right: 5px;
+}
+#note .note .note_content .note_content_c>li>div>span:last-child{
+    font-size: 12px;
+    color:rgb(153, 153, 153);
+    text-decoration: line-through;
+}
+/* 右边的内容 */
+#note .note .note_content .note_content_r{
+    width: 230px;
+    box-sizing: border-box;
+}
+#note .note .note_content .note_content_r .note_content_r1>a{
+    display:block;
+    border:1px solid rgb(230, 230, 230);
+    border-bottom:0 none;
+    color:rgb(51, 51, 51);
+    line-height: 32px;
+}
+#note .note .note_content .note_content_r .note_content_r1>a:last-child{
+    border-bottom:1px solid rgb(230, 230, 230);
+}
+#note .note .note_content .note_content_r .note_content_r1>a>img{
+    width: 228px;
+    height: 90px;
+    display: block;
+}
+/* ===================== */
+/* ====================== */
+/* 出版社区域 */
+#club{
+    background: white;
+}
+#club .club{
+    margin-top:20px;
+}
+/* 左边的区域 */
+#club .club .club_l{
+    width: 960px;
+}
+/* 标题栏 */
+#club .club .club_l>h2{
+    background: rgb(245, 245, 245);
+    line-height: 57px;
+    padding-left: 18px;
+    margin-bottom: 15px;
+}
+#club .club .club_l>h2>a{
+    font-size: 20px;
+    color:rgb(94, 173, 177);
+}
+/* 左边出版社分类区域 */
+#club .club .club_l .club_l_l{
+    width: 210px;
+    box-sizing: border-box;
+    background: rgb(245, 245, 245);
+}
+#club .club .club_l .club_l_l>div{
+    height: 416px;
+    overflow: hidden;
+}
+#club .club .club_l .club_l_l>div>ul>li>a{
+    display: block;
+    padding:0 10px 0 22px;
+    line-height: 42px;
+    font-size: 12px;
+    color:rgb(51, 51, 51);
+}
+#club .club .club_l .club_l_l>div>ul>li>a:hover{
+    color:white;
+    background: rgb(94, 173, 177);
+}
+#club .club .club_l .club_l_l>div>ul>li>a>i{
+    font-size: 10px;
+    color:rgb(245, 245, 245);
+}
+/* 上下按钮 */
+#club .club .club_l .club_l_l>p{
+    margin:0 10px;
+    border-top:1px solid rgb(227, 227, 227);
+    padding:3px 0;
+}
+#club .club .club_l .club_l_l>p>i{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    color:rgb(170, 170, 170);
+    margin-left: 6px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom:5px;
+}
+/* 内容详情部分 */
+#club .club .club_l .club_l_r{
+    width: 740px;
+}
+#club .club .club_l .club_l_r>div{
+    border-bottom:1px solid rgb(237, 237, 237);
+    padding-bottom:50px;
+}
+#club .club .club_l .club_l_r>div>a{
+    font-size: 18px;
+    color:#000;
+    line-height: 34px;
+    margin-left: 20px;
+    font-weight: 900;
+}
+#club .club .club_l .club_l_r>div>a:hover{
+    color:rgb(230,0,0);
+}
+#club .club .club_l .club_l_r>div>p{
+    font-size: 12px;
+    color:rgb(102, 102, 102);
+    text-indent: 2em;
+    margin-left: 20px;
+    line-height: 28px;
+    padding-right: 40px;
+}
+/* 商品部分 */
+#club .club .club_l .club_l_r>ul{
+    width: 740px;
+    box-sizing: border-box;
+}
+#club .club .club_l .club_l_r>ul>li{
+    float: left;
+    width: 185px;
+    margin-top:10px;
+}
+#club .club .club_l .club_l_r>ul>li>a{
+    display: block;
+}
+#club .club .club_l .club_l_r>ul>li>a>img{
+    width: 115px;
+    height: 158px;
+    margin-left: 30px;
+}
+#club .club .club_l .club_l_r>ul>li>a:first-child+a{
+    font-size: 12px;
+    padding-left: 28px;
+    color:rgb(51, 51, 51);
+    line-height: 26px;
+}
+#club .club .club_l .club_l_r>ul>li>a:first-child+a:hover{
+    color:rgb(230, 0, 0);
+}
+/* 作者 */
+#club .club .club_l .club_l_r>ul>li>p{
+    font-size: 12px;
+    color:#666;
+    padding-left: 28px;
+    line-height: 20px;
+}
+/* 价格 */
+#club .club .club_l .club_l_r>ul>li>div{
+    padding-left: 28px;
+    line-height: 27px;
+}
+#club .club .club_l .club_l_r>ul>li>div>span:first-child{
+    font-size: 15px;
+    color:rgb(230, 0, 0);
+    margin-right: 5px;
+}
+#club .club .club_l .club_l_r>ul>li>div>span:last-child{
+    font-size: 12px;
+    color:rgb(153, 153, 153);
+    text-decoration: line-through;
+}
+/* 右边的区域 */
+#club .club .club_r{
+    width: 230px;
+    box-sizing: border-box;
+}
+#club .club .club_r>p{
+    background: rgb(94, 173, 177);
+    padding-left: 10px;
+    font-size: 20px;
+    color:white;
+    line-height: 58.4px;
+}
+#club .club .club_r .club_r1{
+    padding:20px 20px 5px;
+    border-left:1px solid rgb(230, 230, 230);
+    border-right:1px solid rgb(230, 230, 230);
+}
+#club .club .club_r .club_r1>a:hover{
+    text-decoration: underline;
+}
+#club .club .club_r .club_r1 .club_ra1{
+    display: block;
+    font-size: 14px;
+    padding:0 10px;
+    background: rgb(94, 173, 177);
+    color:white;
+    line-height: 25px;
+    width: 63px;
+}
+#club .club .club_r .club_r1 .club_ra2{
+    display: block;
+    font-size: 12px;
+    color:rgb(51, 51, 51);
+    line-height: 18px;
+    margin-top: 15px;
+}
+#club .club .club_r .club_r1 .club_ra2:hover{
+    color:rgb(230, 0, 0);
+}
+#club .club .club_r .club_r1 .club_ra3{
+    display: block;
+    margin:10px 0;
+}
+#club .club .club_r .club_r1 .club_ra3>img{
+    width: 160px;
+    height: 160px;
+    margin-left: 15px;
+}
+#club .club .club_r .club_r1 .club_ra4{
+    font-size: 14px;
+    color:#333;
+}
+#club .club .club_r .club_r1 .club_ra4:hover{
+    color:rgb(230,0,0);
+    text-decoration: none;
+}
+#club .club .club_r .club_r1>p>span:first-child{
+    font-size: 16px;
+    line-height: 30px;
+    color:rgb(94, 173, 184);
+    margin-right: 5px;
+}
+#club .club .club_r .club_r1>p>span:last-child{
+    font-size: 14px;
+    color:rgb(179, 153, 166);
+    text-decoration: line-through;
+    line-height: 32px;
+}
+#club .club .club_r .club_r2{
+    background: rgb(247, 247, 247);
+    padding:10px;
+}
+#club .club .club_r .club_r2>a{
+    display: inline-block;
+    padding:0 13px;
+    font-size: 12px;
+    color:rgb(51, 51, 51);
+    line-height: 30px;
+}
+#club .club .club_r .club_r2>a:hover{
+    text-decoration: underline;
+    color:rgb(61, 169, 174);
+}
+/* ============================ */
+/* ======================= */
+/* 底部 */
+#foot1{
+    background:rgb(245, 245, 245);
+}
+#foot1 .foot1{
+    margin-top: 30px;
+}
+#foot1 .foot1>a{
+    display: block;
+}
+#foot1 .foot1>a>img{
+    width: 1200px;
+}
+/* 底部2 */
+#foot2{
+    background:white;
+}
+#foot2 .foot2>a{
+    display: block;
+}
+#foot2 .foot2>a>img{
+    width: 1200px;
+}
+/* ==================== */
