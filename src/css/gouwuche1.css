@@ -1,0 +1,262 @@
+/* 头部 */
+#hh{
+    border-bottom:2px solid rgb(230,0,0);
+}
+/* 小标题部分 */
+#top .top{
+    margin-top:30px;
+}
+#top .top>img{
+    width: 615px;
+    height: 36px;
+}
+/* 购物车区域 */
+#che .che .che_1{
+    margin-top:30px;
+}
+#che .che .che_1>a{
+    font-size: 18px;
+    color:#333;
+    font-weight: 900;
+}
+#che .che .che_1>a:nth-of-type(1){
+    color:rgb(230,0,0);
+    border-bottom:3px solid rgb(230,0,0);
+    margin-right:30px;
+}
+#che .che .che_2{
+    padding:15px;
+    font-size: 12px;
+    color:#666;
+    border:1px solid rgb(228, 228, 228);
+}
+#che .che .che_2>p:nth-of-type(1){
+    margin:0 110px 0 30px;
+}
+#che .che .che_2>p:nth-of-type(2){
+    margin-right:186px;
+}
+#che .che .che_2>p:nth-of-type(3){
+    margin-right:91px;
+}
+#che .che .che_2>p:nth-of-type(4){
+    margin-right:90px;
+}
+#che .che .che_2>p:nth-of-type(5){
+    margin-right:150px;
+}
+#che .che .che_2>p:nth-of-type(6){
+    margin-right:95px;
+}
+#che .che .che_3>li{
+    border:1px solid rgb(228, 228, 228);
+    padding:15px;
+    background:rgb(255, 251, 240);
+    margin-top:30px;
+}
+#che .che .che_3>li>input{
+    margin-top:33px;
+}
+#che .che .che_3>li a:hover{
+    text-decoration: underline;
+}
+#che .che .che_3>li>a:nth-of-type(1){
+    display: block;
+    width: 86px;
+    height: 86px;
+    border:1px solid rgb(228, 228, 228);
+    margin-left: 20px;
+}
+#che .che .che_3>li>a:nth-of-type(1)>img{
+    width: 52px;
+    height: 80px;
+    display: block;
+    margin:2px 16px;
+}
+#che .che .che_3>li>a:nth-of-type(2){
+    display: block;
+    font-size: 12px;
+    color:#333;
+    margin-top:31px;
+    margin-left: 53px;
+}
+#che .che .che_3>li>span{
+    display: block;
+    font-size: 15px;
+    color:#666;
+    margin-top:30px;
+}
+#che .che .che_3>li>span:nth-of-type(1){
+    margin-left: 173px;
+}
+#che .che .che_3>li>span:nth-of-type(2){
+    margin-left: 115px;
+}
+#che .che .che_3>li>p:nth-of-type(1){
+    width: 88px;
+    height:24px;
+    border:1px solid rgb(228, 228, 228);
+    background: white;
+    margin-top:29px;
+    margin-left:102px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 21px;
+}
+#che .che .che_3>li>p:nth-of-type(1)>span{
+    display: block;
+    width:23px;
+    height:23px;
+}
+#che .che .che_3>li>p:nth-of-type(1)>span:nth-of-type(1){
+    border-right:1px solid rgb(228, 228, 228);
+}
+#che .che .che_3>li>p:nth-of-type(1)>span:nth-of-type(2){
+    border-left:1px solid rgb(228, 228, 228);
+}
+#che .che .che_3>li>span:nth-of-type(3){
+    margin-left: 120px;
+    color:rgb(230,0,0);
+}
+#che .che .che_3>li>p:nth-of-type(2){
+    margin-left:98px;
+    margin-top:27px;
+}
+#che .che .che_3>li>p:nth-of-type(2)>a{
+    display: block;
+    font-size: 12px;
+    color:#333;
+}
+/* 结算区域 */
+#sale{
+    background: rgb(229, 229, 229);
+    padding:10px 0;
+}
+#sale .sale{
+    background: rgb(250, 250, 250);
+    height:60px;
+    box-sizing: border-box;
+}
+#sale .sale .sale_1>input{
+    margin:25px 15px;
+}
+#sale .sale .sale_1>span{
+    display: block;
+    font-size: 12px;
+    color:#333;
+    margin-left:5px;
+    margin-top:23px;
+}
+#sale .sale .sale_1>a{
+    font-size: 12px;
+    color:#333;
+    display: block;
+    margin-top:23px;
+    margin-left:20px;
+}
+#sale .sale .sale_1>a:hover{
+    text-decoration: underline;
+}
+#sale .sale .sale_2{
+    font-size: 22px;
+    color:white;
+    font-weight: 900;
+    background: red;
+    height:100%;
+    line-height: 60px;
+    cursor: pointer;
+    padding:0 35px;
+}
+#sale .sale .sale_3{
+    height: 100%;
+    margin-right:30px;
+}
+#sale .sale .sale_3>p{
+    font-size: 12px;
+    text-align: right;
+    line-height: 20px;
+    margin-top:8px;
+}
+#sale .sale .sale_3>p:nth-of-type(1)>span:nth-of-type(1){
+    font-size: 14px;
+    color:rgb(227, 20, 54);
+}
+#sale .sale .sale_3>p:nth-of-type(1)>span:nth-of-type(2){
+    font-size: 18px;
+    font-weight: 900;
+    color:rgb(230,0,0);
+}
+#sale .sale .sale_3>p:nth-of-type(2){
+    color:#999;
+}
+/* 中图推荐的区域 */
+#move .move{
+    margin-top:20px;
+}
+#move .move .move_1{
+    border-bottom:1px solid rgb(196, 196, 196);
+    margin-bottom:10px;
+}
+#move .move .move_1>li{
+    float: left;
+    padding:10px;
+}
+#move .move .move_1>li:hover{
+    color:rgb(230,0,0);
+    border-bottom:3px solid rgb(230,0,0);
+    padding-bottom:7px;
+}
+#move .move .move_2>li{
+    float: left;
+    box-sizing: border-box;
+    width: 200px;
+    margin:0 20px;
+}
+#move .move .move_2>li>a:nth-of-type(1){
+    display: block;
+}
+#move .move .move_2>li>a:nth-of-type(1)>img{
+    display: blockk;
+    width: 150px;
+    height: 150px;
+    margin-left:20px;
+}
+#move .move .move_2>li>a:nth-of-type(2){
+    font-size: 12px;
+    color:#323232;
+    line-height: 20px;;
+    margin-left: 10px;
+}
+#move .move .move_2>li>a:nth-of-type(2):hover{
+    color:rgb(230,0,0);
+}
+#move .move .move_2>li>p{
+    margin:20px 17px;
+}
+#move .move .move_2>li>p>span:nth-of-type(1){
+    color:red;
+}
+#move .move .move_2>li>p>span:nth-of-type(2){
+    font-size: 12px;
+    color:#787878;
+    text-decoration: line-through;
+}
+#move .move .move_2>li>button{
+    width: 102px;
+    height: 30px;
+    border:1px solid black;
+    background: rgb(255, 255, 255);
+    font-size: 12px;
+    color:#666;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    margin:0 auto;
+    border-radius:6px;
+    cursor: pointer;
+}
+#move .move .move_2>li>button:hover{
+    background: rgb(255, 40, 50);
+    color:white;
+    border:0 none;
+}

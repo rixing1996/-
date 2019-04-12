@@ -610,6 +610,7 @@
 #team .team .team_content>ul>li>a>img{
     display:block;
     width:285px;
+    height: 190px;
 }
 /* 详情 */
 #team .team .team_content>ul>li>div{

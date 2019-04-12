@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>列表页面</title>
+    <title>详情页</title>
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/list1.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/details1.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
-    <link rel="stylesheet" href="../lib/crxcarousel/crxcarousel.css">
+    <link rel="stylesheet" type="text/css" href="../lib/crxcarousel/crxcarousel.css">
     <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
     <script src="../lib/crxcarousel/crxcarousel.js"></script>
     <base href="../">
-    <script src="./js/list1.js"></script>
+    <script src="./js/details1.js"></script>
     <script>
         jQuery(function($){
-            $("#hh").load("./html/header.html");
+            $("#hh").load("./html/header.html");    
         })
     </script>
 </head>
 <body>
-    <!-- 外面最大的盒子 -->
     <div id="bigbox">
+        <!-- 头部 -->
         <div id="hh">
 
         </div>
@@ -585,181 +585,540 @@
                 </div>
                 <!-- 右边的导航 -->
                 <ul class="nav_r fr">
-                    <li><a href="./index.html">首页</a></li>
-                    <li><a href="javascript:;">淘书团</a></li>
-                    <li><a href="javascript:;">畅销榜</a></li>
-                    <li><a href="javascript:;"><img src="./img/09.xingxing.png" alt="">五星书</a></li>
-                    <li><a href="javascript:;">新上架</a></li>
-                    <li><a href="javascript:;">9块9包邮</a></li>
-                    <li><a href="javascript:;">出版社浏览</a></li>
-                    <li><a href="javascript:;">闲情雅趣</a></li>
-                    <li><a href="javascript:;">批发</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">淘书团</a></li>
+                    <li><a href="#">畅销榜</a></li>
+                    <li><a href="#"><img src="./img/09.xingxing.png" alt="">五星书</a></li>
+                    <li><a href="#">新上架</a></li>
+                    <li><a href="#">9块9包邮</a></li>
+                    <li><a href="#">出版社浏览</a></li>
+                    <li><a href="#">闲情雅趣</a></li>
+                    <li><a href="#">批发</a></li>
                 </ul>
             </div>
         </div>
-        <!-- 图书网>包邮图书转换区域 -->
+        <!-- 转换区域 -->
         <div id="trans">
             <div class="trans con clearfix">
-                <a href="./index.html">中国图书网</a>
-                >
-                <span>包邮图书</span>
+                <h4>
+                    <a href="./index.html">中国图书网</a>
+                    <i class="iconfont icon-you"></i>
+                    <a href="./html/list.html">社会科学</a>
+                    <i class="iconfont icon-you"></i>
+                    <a href="./html/list.html">语言文字</a>
+                    <i class="iconfont icon-you"></i>
+                    <span>简化字溯源</span>
+                </h4>
             </div>
         </div>
-        <!-- 渲染列表区域 -->
-        <div id="render">
-            <div class="render con clearfix">
-                <ul class="clearfix render_r">
-                    <li>
-                        <a href="#" class="a_img">
-                            <img src="./img/27.jpg" alt="">
-                        </a>
-                        <a href="#" class="a_name">人生之体验续编</a>
-                        <p>唐君毅 著</p>
+        <!-- 放大区域 -->
+        <div id="big">
+            <div class="big con clearfix">
+                <!-- 左边的放大区域 -->
+                <div class="fl big_l">
+                    <img src="./img/30.jpg" alt="">
+                    <span></span>
+                    <a href="#">
+                        <img src="./img/share.png" alt="">
+                        分享
+                    </a>
+                    <!-- 小区域 -->
+                    <div class="sign">
+
+                    </div>
+                    <!-- 大区域 -->
+                    <div class="big_img">
+                        <img src="./img/30.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 中间详情页面 -->
+                <div class="fl big_c">
+                    <div class="big_c1">
+                        <!-- 标题 -->
+                        <h4>
+                            简化字溯源
+                        </h4>
+                        <!-- 说明 -->
+                        <p class="p1">
+                                豆瓣8.4分，收录解说482个简化字和14个简化偏旁的来源。并附图184幅，清晰显示出简化字在历史文献中的使用痕迹。
+                        </p>
+                        <!-- 作者 -->
+                        <p class="p2">
+                            作者： <a href="#">张书岩/王铁昆/李青梅/安宁 编著</a>
+                        </p>
+                        <!-- 出版社 -->
+                        <p class="p3">
+                            出版社： 
+                            <a href="#">语文出版社</a>
+                            出版时间： 
+                            <span>1997-11-01</span>
+                        </p>
+                        <!-- 页数 -->
+                        <p class="p4">
+                            开本： 
+                            <span>32开</span>
+                            页数： 
+                            <span>260页</span>
+                        </p>
+                        <!-- 评价 -->
+                        <p class="p5">
+                            读者评分： 
+                            <span>4.8分</span>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-xingxing"></i>
+                            <i class="iconfont icon-yiban"></i>
+                            <a href="#">6条评论</a>
+                        </p>
+                        <!-- 排名 -->
+                        <p class="p6">
+                            排名： 
+                            <a href="#">社会科学销量榜</a>
+                            第<span>9</span>位
+                        </p>
+                    </div>
+                    <!-- 价格区域 -->
+                    <div class="big_c2">
                         <div class="clearfix">
-                            <span class="fl">￥9.9</span>
-                            <span class="fl">包邮</span>
-                            <span class="fr">定价￥16.8</span>
+                            <p class="fl">
+                                中图价： 
+                                <span>￥13.0</span>
+                            </p>
+                            <p class="fl">
+                                <span>(4.5折)</span>
+                                定价:<span>￥28.8</span>
+                                <a href="#">登录后可看到会员价</a>
+                            </p>
                         </div>
-                        <button>立即购买</button>
-                    </li>
-                    <li>
-                        <a href="#" class="a_img">
-                            <img src="./img/27.jpg" alt="">
+                        <p>
+                            促销活动： 
+                            <a href="#">3-5折|每满99减30</a>
+                            <a href="#">新上架特惠下单折上七折</a>
+                        </p>
+                    </div>
+                    <!-- 购物车区域 -->
+                    <div class="big_c3 clearfix">
+                        <a href="#" class="fl">
+                            <i class="iconfont icon-gouwuche"></i>
+                            加入购物车
                         </a>
-                        <a href="#" class="a_name">人生之体验续编</a>
-                        <p>唐君毅 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥9.9</span>
-                            <span class="fl">包邮</span>
-                            <span class="fr">定价￥16.8</span>
-                        </div>
-                        <button>立即购买</button>
-                    </li>
-                    <li>
-                        <a href="#" class="a_img">
-                            <img src="./img/27.jpg" alt="">
+                        <a href="#" class="fl">收藏</a>
+                        <a href="#" class="fl">运费6元，满69元免运费</a>
+                    </div>
+                    <!-- 提示区域 -->
+                    <div class="big_c4">
+                        <span>温馨提示：</span>
+                        5折以下图书主要为出版社尾货，大部分为全新，个别图书品相8-9成新、切口
+                        有划线标记、光盘等附件不全
+                    </div>
+                </div>
+                <!-- 右边的列表区域 -->
+                <div class="fr big_r">
+                    <h2>
+                        本类五星书
+                        <a href="#" class="fr">更多></a>
+                    </h2>
+                    <div class="clearfix">
+                        <a href="#" class="fl">
+                            <img src="./img/33.jpg" alt="">
                         </a>
-                        <a href="#" class="a_name">人生之体验续编</a>
-                        <p>唐君毅 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥9.9</span>
-                            <span class="fl">包邮</span>
-                            <span class="fr">定价￥16.8</span>
+                        <div class="fl">
+                            <a href="#">(精)北京师范大学图书馆古籍善本书</a>
+                            <div>
+                                <i class="iconfont icon-xingxing"></i>
+                                <i class="iconfont icon-xingxing"></i>
+                                <i class="iconfont icon-xingxing"></i>
+                                <i class="iconfont icon-xingxing"></i>
+                                <i class="iconfont icon-xingxing"></i>
+                            </div>
+                            <p>
+                                <span>￥36</span>
+                                <span>￥80</span>
+                            </p>
                         </div>
-                        <button>立即购买</button>
-                    </li>
-                    <li>
-                        <a href="#" class="a_img">
-                            <img src="./img/27.jpg" alt="">
-                        </a>
-                        <a href="#" class="a_name">人生之体验续编</a>
-                        <p>唐君毅 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥9.9</span>
-                            <span class="fl">包邮</span>
-                            <span class="fr">定价￥16.8</span>
-                        </div>
-                        <button>立即购买</button>
-                    </li>
-                    <li>
-                        <a href="#" class="a_img">
-                            <img src="./img/27.jpg" alt="">
-                        </a>
-                        <a href="#" class="a_name">人生之体验续编</a>
-                        <p>唐君毅 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥9.9</span>
-                            <span class="fl">包邮</span>
-                            <span class="fr">定价￥16.8</span>
-                        </div>
-                        <button>立即购买</button>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="clearfix">与原生家庭和解<i class="iconfont icon-xiangyou fr"></i></div>
+                    <div class="clearfix">简明教育词典(平装)<i class="iconfont icon-xiangyou fr"></i></div>
+                    <div class="clearfix">图书子源<i class="iconfont icon-xiangyou fr"></i></div>
+                    <div class="clearfix">发现汉字<i class="iconfont icon-xiangyou fr"></i></div>
+                    <div class="clearfix">小学语文课程与教学导论<i class="iconfont icon-xiangyou fr"></i></div>
+                    <div class="clearfix">广东海丰方言研究<i class="iconfont icon-xiangyou fr"></i></div>
+                </div>
             </div>
         </div>
-        <!-- 本站常销区域 -->
-        <div id="site">
-            <div class="site con clearfix">
-                <!-- 标题区 -->
-                <h2>本站常销</h2>
-                <!-- 商品部分 -->
+        <!-- 详情内容以及浏览记录等区域 -->
+        <div id="detail">
+            <div class="detail con clearfix">
+                <!-- 左边的区域 -->
+                <div class="detail_l fl">
+                    <!-- 书友推荐区域 -->
+                    <div class="detail_l1">
+                        <h2>书友推荐</h2>
+                        <div>
+                            <a href="#">
+                                <img src="./img/22.jpg" alt="">
+                            </a>
+                            <a href="#">现代文言</a>
+                            <p><span>罗维扬 选编</span></p>
+                            <div><span>￥9.6</span><span>￥30.0</span></div>
+                        </div>
+                        <div class="clearfix">佛教故事选萃<i class="iconfont icon-xiangyou fr"></i></div>
+                        <div class="clearfix">不安地初啼<i class="iconfont icon-xiangyou fr"></i></div>
+                        <div class="clearfix">心是孤独的猎手<i class="iconfont icon-xiangyou fr"></i></div>
+                        <div class="clearfix">发现汉字<i class="iconfont icon-xiangyou fr"></i></div>
+                        <div class="clearfix">小学语文课程与教学导论<i class="iconfont icon-xiangyou fr"></i></div>
+                        <div class="clearfix">广东海丰方言研究<i class="iconfont icon-xiangyou fr"></i></div>
+                        <div class="clearfix">中国史纲要<i class="iconfont icon-xiangyou fr"></i></div>
+                    </div>
+                    <!-- 本类畅销区域 -->
+                    <div class="detail_l2">
+                        <h2>本类畅销</h2>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/40.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉字故事101夜</a>
+                                    <p>刘永成 著</p>
+                                    <div>
+                                        <span>￥15.3</span>
+                                        <span>￥45</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/40.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉字故事101夜</a>
+                                    <p>刘永成 著</p>
+                                    <div>
+                                        <span>￥15.3</span>
+                                        <span>￥45</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/40.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉字故事101夜</a>
+                                    <p>刘永成 著</p>
+                                    <div>
+                                        <span>￥15.3</span>
+                                        <span>￥45</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/40.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉字故事101夜</a>
+                                    <p>刘永成 著</p>
+                                    <div>
+                                        <span>￥15.3</span>
+                                        <span>￥45</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <!-- 浏览记录区域 -->
+                    <div class="detail_l3">
+                        <h2>浏览历史</h2>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/40.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉字故事101夜</a>
+                                    <p>刘永成 著</p>
+                                    <div>
+                                        <span>￥15.3</span>
+                                        <span>￥45</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/40.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉字故事101夜</a>
+                                    <p>刘永成 著</p>
+                                    <div>
+                                        <span>￥15.3</span>
+                                        <span>￥45</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/40.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉字故事101夜</a>
+                                    <p>刘永成 著</p>
+                                    <div>
+                                        <span>￥15.3</span>
+                                        <span>￥45</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/40.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉字故事101夜</a>
+                                    <p>刘永成 著</p>
+                                    <div>
+                                        <span>￥15.3</span>
+                                        <span>￥45</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <!-- 右边的区域 -->
+                <div class="detail_r fr">
+                    <div class="detail_r1">
+                        <!-- 标题 -->
+                        <h2>买过本商品的人还买了</h2>
+                        <div>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/50.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉语词汇与华夏文化</a>
+                                    <p>杨琳 著</p>
+                                    <div>
+                                        <span>￥7.2</span>
+                                        <span>￥10.5</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/50.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉语词汇与华夏文化</a>
+                                    <p>杨琳 著</p>
+                                    <div>
+                                        <span>￥7.2</span>
+                                        <span>￥10.5</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/50.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉语词汇与华夏文化</a>
+                                    <p>杨琳 著</p>
+                                    <div>
+                                        <span>￥7.2</span>
+                                        <span>￥10.5</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/50.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉语词汇与华夏文化</a>
+                                    <p>杨琳 著</p>
+                                    <div>
+                                        <span>￥7.2</span>
+                                        <span>￥10.5</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/50.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉语词汇与华夏文化</a>
+                                    <p>杨琳 著</p>
+                                    <div>
+                                        <span>￥7.2</span>
+                                        <span>￥10.5</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/50.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉语词汇与华夏文化</a>
+                                    <p>杨琳 著</p>
+                                    <div>
+                                        <span>￥7.2</span>
+                                        <span>￥10.5</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./img/50.jpg" alt="">
+                                    </a>
+                                    <a href="#">汉语词汇与华夏文化</a>
+                                    <p>杨琳 著</p>
+                                    <div>
+                                        <span>￥7.2</span>
+                                        <span>￥10.5</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix">
+                                <i class="iconfont icon-zuo fl"></i>
+                                <i class="iconfont icon-you fr"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 商品详情、购物车区域 -->
+                    <div class="detail_r2 clearfix">
+                        <a href="#" class="fl">商品详情</a>
+                        <a href="#">商品评论(6条)</a>
+                        <div class="fr clearfix">
+                            <a href="#" class="fr">
+                                <i class="iconfont icon-gouwuche"></i>
+                                加入购物车
+                            </a>
+                            <p class="fr">中图价:￥<span>13.0</span></p>
+                        </div>
+                    </div>
+                    <!-- 两张图片区域 -->
+                    <div class="detail_r3 clearfix">
+                        <a href="#" class="fl">
+                            <img src="./img/pic22.jpg" alt="">
+                        </a>
+                        <a href="#" class="fr">
+                            <img src="./img/pic23.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- 详情信息 -->
+                    <div class="detail_r4 clearfix">
+                        <div class="detail_r4_l fl">
+                            <h2>简化字溯源 版权信息</h2>
+                            <ul class="clearfix">
+                                <li>ISBN：7801263030</li>
+                                <li>条形码：9787801263032 ; 978-7-80126-303-2</li>
+                                <li>装帧：简裝本</li>
+                                <li>版次：1</li>
+                                <li>册数：暂无</li>
+                                <li>重量：暂无</li>
+                                <li>印刷次数：1</li>
+                            </ul>
+                            <p>
+                                所属分类：
+                                <a href="#">社会科学</a>
+                                >
+                                <a href="#">语言文字</a>
+                                >
+                            </p>
+                            <h2>简化字溯源 内容简介</h2>
+                            <p>本书上编介绍了汉字形体发展演变的总趋势，并以酝酿、实践、振兴和高潮四个阶段讲述了自清末以来的汉字简化运动史。下编一共收录解说了482个简化字和14个简化偏旁的来源。并附图184幅，清晰显示出简化字在历史文献中的使用痕迹。</p>
+                            <h2>简化字溯源 目录</h2>
+                            <div>
+                                序<br> 
+                                上编 汉字简化运动史略 <br>
+                                绪论 <br>
+                                一、汉字形体发展演变的总趋势 <br>
+                                二、简体字古已有之 <br>
+                                三、近百年来汉字简化运动的历史分期 <br>
+                                diyi节 汉字简化运动的酝酿（清末——1934） <br>
+                                一、清末陆费逵揭开简体字运动的序幕 <br>
+                                二、“五四”以后简体字运动的逐渐兴起 <br>
+                                第二节 汉字简化运动的初步实践（1935—1949） <br>
+                            </div>
+                        </div>
+                        <!-- 右边的二维码 -->
+                        <div class="detail_r4_r fr">
+                            <a href="#">版权信息</a>
+                            <a href="#">内容简介</a>
+                            <a href="#">目录</a>
+                            <img src="./img/pic24.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 编辑推荐区域 -->
+        <div id="edit">
+            <div class="edit con clearfix">
+                <!-- 标题 -->
+                <h2>
+                    编辑推荐
+                </h2>
                 <ul class="clearfix">
                     <li>
-                        <a href="#" class="a_pic">
-                            <img src="./img/05.jpg" alt="">
+                        <a href="#">
+                            <img src="./img/33.jpg" alt="">
                         </a>
-                        <a href="#">雨果游记集</a>
-                        <p>[法]维克多·雨果 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥10.6</span>
-                            <span class="fl">￥30.2</span>
+                        <a href="#">国王挑女婿</a>
+                        <p>周熔 编著</p>
+                        <div>
+                            <span>￥8.4</span>
+                            <span>￥28.0</span>
                         </div>
                         <button>加入购物车</button>
                     </li>
                     <li>
-                        <a href="#" class="a_pic">
-                            <img src="./img/05.jpg" alt="">
+                        <a href="#">
+                            <img src="./img/33.jpg" alt="">
                         </a>
-                        <a href="#">雨果游记集</a>
-                        <p>[法]维克多·雨果 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥10.6</span>
-                            <span class="fl">￥30.2</span>
+                        <a href="#">国王挑女婿</a>
+                        <p>周熔 编著</p>
+                        <div>
+                            <span>￥8.4</span>
+                            <span>￥28.0</span>
                         </div>
                         <button>加入购物车</button>
                     </li>
                     <li>
-                        <a href="#" class="a_pic">
-                            <img src="./img/05.jpg" alt="">
+                        <a href="#">
+                            <img src="./img/33.jpg" alt="">
                         </a>
-                        <a href="#">雨果游记集</a>
-                        <p>[法]维克多·雨果 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥10.6</span>
-                            <span class="fl">￥30.2</span>
+                        <a href="#">国王挑女婿</a>
+                        <p>周熔 编著</p>
+                        <div>
+                            <span>￥8.4</span>
+                            <span>￥28.0</span>
                         </div>
                         <button>加入购物车</button>
                     </li>
                     <li>
-                        <a href="#" class="a_pic">
-                            <img src="./img/05.jpg" alt="">
+                        <a href="#">
+                            <img src="./img/33.jpg" alt="">
                         </a>
-                        <a href="#">雨果游记集</a>
-                        <p>[法]维克多·雨果 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥10.6</span>
-                            <span class="fl">￥30.2</span>
+                        <a href="#">国王挑女婿</a>
+                        <p>周熔 编著</p>
+                        <div>
+                            <span>￥8.4</span>
+                            <span>￥28.0</span>
                         </div>
                         <button>加入购物车</button>
                     </li>
                     <li>
-                        <a href="#" class="a_pic">
-                            <img src="./img/05.jpg" alt="">
+                        <a href="#">
+                            <img src="./img/33.jpg" alt="">
                         </a>
-                        <a href="#">雨果游记集</a>
-                        <p>[法]维克多·雨果 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥10.6</span>
-                            <span class="fl">￥30.2</span>
+                        <a href="#">国王挑女婿</a>
+                        <p>周熔 编著</p>
+                        <div>
+                            <span>￥8.4</span>
+                            <span>￥28.0</span>
                         </div>
                         <button>加入购物车</button>
                     </li>
                     <li>
-                        <a href="#" class="a_pic">
-                            <img src="./img/05.jpg" alt="">
+                        <a href="#">
+                            <img src="./img/33.jpg" alt="">
                         </a>
-                        <a href="#">雨果游记集</a>
-                        <p>[法]维克多·雨果 著</p>
-                        <div class="clearfix">
-                            <span class="fl">￥10.6</span>
-                            <span class="fl">￥30.2</span>
+                        <a href="#">国王挑女婿</a>
+                        <p>周熔 编著</p>
+                        <div>
+                            <span>￥8.4</span>
+                            <span>￥28.0</span>
                         </div>
                         <button>加入购物车</button>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- 尾部 -->
+        <!-- 底部区域 -->
         <div id="foot1">
             <div class="foot1 con clearfix">
                 <a href="#">

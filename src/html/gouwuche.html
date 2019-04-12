@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../lib/crxcarousel/crxcarousel.css">
+    <link rel="stylesheet" href="../css/gouwuche1.css">
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+    <script src="../lib/crxcarousel/crxcarousel.js"></script>
+    <base href="../">
+    <script>
+        jQuery(function($){
+            $("#hh").load("./html/header.html");
+        })
+    </script>
+</head>
+<body>
+    <!-- 大盒子 -->
+    <div id="bigbox">
+        <!-- 头部 -->
+        <div id="hh">
+
+        </div>
+        <!-- 小标题部分 -->
+        <div id="top">
+            <div class="top con clearfix">
+                <img src="./img/gouwuche.png" alt="">
+            </div>
+        </div>
+        <!-- 购物车区域 -->
+        <div id="che">
+            <div class="che con clearfix">
+                <div class="che_1 clearfix">
+                    <a href="javascript:;" class="fl">
+                        购物车(<span>4</span>)
+                    </a>
+                    <a href="javascript:;" class="fl">
+                        淘书团购物车
+                    </a>
+                </div>
+                <div class="che_2 clearfix">
+                    <input type="checkbox" class="fl">
+                    <p class="fl">全选</p>
+                    <p class="fl">图书名称</p>
+                    <p class="fl">定价(元)</p>
+                    <p class="fl">一星会员(元)</p>
+                    <p class="fl">数量操作</p>
+                    <p class="fl">小计(元)</p>
+                    <p class="fl">操作</p>
+                </div>
+                <ul class="che_3">
+                    <li class="clearfix">
+                        <input type="checkbox" class="fl">
+                        <a href="javascript:;" class="fl">
+                            <img src="./img/20.jpg" alt="">
+                        </a>
+                        <a href="javascript:;" class="fl">
+                            Go to Gobi
+                        </a> 
+                        <span class="fl">￥50</span>
+                        <span class="fl">￥15</span>
+                        <p class="clearfix fl">
+                            1
+                            <span class="fl">-</span>
+                            <span class="fr">+</span>
+                        </p>
+                        <span class="fl">￥15.0</span>
+                        <p class="fl">
+                            <a href="javascript:;">删除</a>
+                            <a href="javascript:;">移入收藏</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- 结算区域 -->
+        <div id="sale">
+            <div class="sale con clearfix">
+                <div class="sale_1 fl clearfix">
+                    <input type="checkbox" class="fl">
+                    <span class="fl">全选</span>
+                    <a href="javascript:;" class="fl">删除选中的商品</a>
+                    <a href="javascript:;" class="fl">清除下架或清货商品</a>
+                </div>
+                <div class="sale_2 fr">
+                    立即结算
+                </div>
+                <div class="sale_3 fr">
+                    <p>已选择<span>0</span>件商品,商品总金额<span>￥0</span></p>
+                    <p>以优惠：<span>￥0</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- 中图推荐的区域 -->
+        <div id="move">
+            <div class="move con clearfix">
+                <ul class="move_1 clearfix">
+                    <li>中图推荐的</li>
+                    <li>最近浏览的</li>
+                    <li>猜你喜欢的</li>
+                </ul>
+                <ul class="move_2 clearfix">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./img/33.jpg" alt="">
+                        </a>
+                        <a href="javascript:;">
+                            雨果政论集
+                        </a>
+                        <p class="clearfix">
+                            <span class="fl">￥11.4</span>
+                            <span class="fr">￥32.6</span>
+                        </p>
+                        <button>加入购物车</button>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
