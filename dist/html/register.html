@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>注册页面</title><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/register1.css"><script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><script src="../js/register.js"></script><script>//生成并渲染出验证码图形
+        function draw(show_num) {
+            var canvas_width=$('#canvas').width();
+            var canvas_height=$('#canvas').height();
+            var canvas = document.getElementById("canvas");//获取到canvas的对象，演员
+            var context = canvas.getContext("2d");//获取到canvas画图的环境，演员表演的舞台
+            canvas.width = canvas_width;
+            canvas.height = canvas_height;
+            var sCode = "a,b,c,d,e,f,g,h,i,j,k,m,n,p,q,r,s,t,u,v,w,x,y,z,A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0";
+            var aCode = sCode.split(",");
+            var aLength = aCode.length;//获取到数组的长度
+            
+            for (var i = 0; i < 4; i++) {  //这里的for循环可以控制验证码位数（如果想显示6位数，4改成6即可）
+                var j = Math.floor(Math.random() * aLength);//获取到随机的索引值
+                // var deg = Math.random() * 30 * Math.PI / 180;//产生0~30之间的随机弧度
+                var deg = Math.random() - 0.5; //产生一个随机弧度
+                var txt = aCode[j];//得到随机的一个内容
+                show_num[i] = txt.toLowerCase();
+                var x = 10 + i * 20;//文字在canvas上的x坐标
+                var y = 20 + Math.random() * 8;//文字在canvas上的y坐标
+                context.font = "bold 23px 微软雅黑";
+
+                context.translate(x, y);
+                context.rotate(deg);
+
+                context.fillStyle = randomColor();
+                context.fillText(txt, 0, 0);
+
+                context.rotate(-deg);
+                context.translate(-x, -y);
+            }
+            for (var i = 0; i <= 5; i++) { //验证码上显示线条
+                context.strokeStyle = randomColor();
+                context.beginPath();
+                context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);
+                context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);
+                context.stroke();
+            }
+            for (var i = 0; i <= 30; i++) { //验证码上显示小点
+                context.strokeStyle = randomColor();
+                context.beginPath();
+                var x = Math.random() * canvas_width;
+                var y = Math.random() * canvas_height;
+                context.moveTo(x, y);
+                context.lineTo(x + 1, y + 1);
+                context.stroke();
+            }
+        }
+
+        //得到随机的颜色值
+        function randomColor() {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            return "rgb(" + r + "," + g + "," + b + ")";
+        }</script></head><body><!-- 大盒子 --><div id="bigbox"><!-- 头部 --><div id="head"><div class="head con clearfix" style="width: 1000px;"><a href="../index.html" class="fl"><img src="../img/logo.png" alt=""></a><div class="fr"><span class="fl">正版好图书</span> <span class="fl">全场满69包邮</span> <span class="fl">特价书一折起</span></div></div></div><!-- 用户登录区域 --><div id="login"><div class="login con clearfix" style="width: 1000px;"><!-- 标题 --><h2>新用户注册<p class="clearfix">注册即送两张19减5券，全场通用 <a href="./login.html" class="fr">请登录</a> <span class="fr">已有账号 ?</span></p></h2><form action="#"><label for="uname">用户名 ：</label><input type="text" id="uname" placeholder="请输入您的用户名"><br><p class="p1">请输入用户名</p><label for="upwd">设置密码 ：</label><input type="password" id="upwd" placeholder="请输入密码"><br><p class="p2">请设置6到16位登录密码</p><label for="uupwd">确认密码 ：</label><input type="password" id="uupwd" placeholder="请再次输入密码"><br><p class="p3">请再次输入密码</p><label for="code">验证码 ：</label><input type="text" value="" placeholder="请输入右图验证码" id="code" class="input-val"><canvas id="canvas" width="100" height="30"></canvas><p class="p4">请输入图片验证码</p><button class="btn">立即注册</button></form></div></div><!-- 尾部 --><div id="foot"><div class="foot con clearfix" style="width: 1000px;"><a href="#"><img src="../img/foot3.png" alt=""></a></div></div></div></body></html>
