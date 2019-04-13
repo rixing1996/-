@@ -260,3 +260,26 @@
     color:white;
     border:0 none;
 }
+/* 底部 */
+#foot1{
+    background:rgb(245, 245, 245);
+}
+#foot1 .foot1{
+    margin-top: 30px;
+}
+#foot1 .foot1>a{
+    display: block;
+}
+#foot1 .foot1>a>img{
+    width: 1200px;
+}
+/* 底部2 */
+#foot2{
+    background:white;
+}
+#foot2 .foot2>a{
+    display: block;
+}
+#foot2 .foot2>a>img{
+    width: 1200px;
+}

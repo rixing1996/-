@@ -111,6 +111,32 @@ jQuery(function($){
                 有划线标记、光盘等附件不全
             </div>`;
             $render.html(str);
+            
+            // 加入购物车
+            var btn = $(".big_c3>a")[0];
+            $(btn).click(function(){
+                $.ajax({
+                    url: "./api/list3.php",
+                    data: {id:id},
+                    success: function (res2) {
+                        var result2 = JSON.parse(res2);
+                        $.ajax({
+                            url: "./api/list4.php",
+                            data: {
+                                id:result2[0].id,
+                                title:result2[0].title,
+                                url:result2[0].url,
+                                oldprice:result2[0].oldprice,
+                                newprice:result2[0].newprice
+                            },
+                            success: function (res2) {
+                                location.href = "./html/gouwuche.html";
+                            }
+                        });
+                    }
+                });
+                return false;
+            })
         }
     });
     // 买过本商品的人还买了
@@ -185,6 +211,31 @@ jQuery(function($){
                 var $id = $(this).parent().attr("data_id");
                 location.href="./html/details.html?id="+$id;
             });
+            // 加入购物车
+            var $btn1 = $(".edit>ul>li>button");
+            $btn1.click(function(){
+                var id1 = $(this).parent().attr("data_id");
+                $.ajax({
+                    url: "./api/list3.php",
+                    data: {id:id1},
+                    success: function (res1) {
+                        var result1 = JSON.parse(res1);
+                        $.ajax({
+                            url: "./api/list4.php",
+                            data: {
+                                id:result1[0].id,
+                                title:result1[0].title,
+                                url:result1[0].url,
+                                oldprice:result1[0].oldprice,
+                                newprice:result1[0].newprice
+                            },
+                            success: function (res2) {
+                                location.href = "./html/gouwuche.html";
+                            }
+                        });
+                    }
+                });
+            })
         }
     });
 })

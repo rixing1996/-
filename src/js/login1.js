@@ -63,6 +63,9 @@ $(function(){
             // 点击登录按键跳转、存数据
             var $btn = $(".btn");
             $btn.click(function(){
+                $p1.show();
+                $p2.show();
+                $p3.show();
                 if($p1.text() == "用户名正确" && $p2.text() == "密码正确" && $p3.text() == "验证码正确"){
                     var uname = result[a].uname;
                     var pwd = result[a].pwd;
@@ -77,6 +80,18 @@ $(function(){
                         }
                     });
                     location.href = "../index.html?true";
+                    return false;
+                }else{
+                    if($p1.text() != "用户名正确"){
+                        alert("用户名不正确");
+                        
+                    }else if($p2.text() != "密码正确"){
+                        alert("密码不正确");
+                        
+                    }else{
+                        alert("验证码不正确");
+                        
+                    }
                     return false;
                 }
             })

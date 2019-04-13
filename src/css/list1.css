@@ -286,6 +286,21 @@
 /* 渲染列表区域 */
 #render .render{
     margin-top:20px;
+    margin-bottom:70px;
+    position: relative;
+}
+#render .render>span{
+    display: block;
+    float: left;
+    margin-right:10px;
+    border:1px solid grey;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+#render .render>span.active{
+    background: orange;
 }
 #render .render .render_r>li{
     float:left;
