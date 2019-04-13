@@ -80,8 +80,9 @@ jQuery(function($){
                 var all = 0;
                 for(var i=0;i<$xzs2.length;i++){
                     var zj2 = $($xzs2[i]).find(".zj").text().slice(1);
-                    all += parseInt(zj2);
+                    all += Number(zj2);
                 }
+                all = all.toFixed(1);
                 $($jnum[1]).text(all);
             })
             // 删除勾选的商品

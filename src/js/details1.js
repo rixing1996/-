@@ -139,6 +139,29 @@ jQuery(function($){
             })
         }
     });
+    // 本类畅销渲染
+    // var $ul3 = $(".detail_l2>div>ul");
+    // $.ajax({
+    //     url: "./api/details3.php",
+    //     success: function (res3) {
+    //         var result3 = JSON.parse(res3);
+    //         var str1 ="";
+    //         for(var i=0;i<result3.length;i++){
+    //             str += `<li data_id="${result3[i].id}">
+    //                 <a href="javascript:;">
+    //                     <img src="${result3[i].url}" alt="">
+    //                 </a>
+    //                 <a href="javascript:;">${result3[i].title.slice(0,7)}</a>
+    //                 <p>${result3[i].author.slice(0,7)}</p>
+    //                 <div>
+    //                     <span>￥${result3[i].newprice}</span>
+    //                     <span>￥${result3[i].oldprice}</span>
+    //                 </div>
+    //             </li>`;
+    //         }
+    //         $ul3.html(str);
+    //     }
+    // });
     // 买过本商品的人还买了
     var $ul1 = $(".detail_r1>div>ul");
     $.ajax({
